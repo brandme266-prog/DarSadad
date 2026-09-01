@@ -3,7 +3,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { motion } from "framer-motion";
-import { ArrowLeft, Building2, Landmark, ShieldCheck, ChevronLeft, CheckCircle2, TrendingUp, Users } from "lucide-react";
+import { ArrowLeft, Building2, Landmark, ShieldCheck, ChevronLeft, CheckCircle2, TrendingUp, Users, Phone } from "lucide-react";
 
 export default function Home() {
   const containerVariants = {
@@ -55,12 +55,13 @@ export default function Home() {
               </motion.p>
               
               <motion.div variants={itemVariants} className="flex flex-col sm:flex-row gap-4 justify-start">
-                <Link href="/services" className="bg-saddad-gold text-white text-center px-8 py-4 rounded-xl font-bold hover:bg-saddad-gold-light hover:text-slate-900 transition-all flex items-center justify-center gap-3 shadow-lg shadow-saddad-gold/25 group">
-                  <span className="text-base">اطلب استشارتك الآن</span>
-                  <ArrowLeft size={18} strokeWidth={2.5} className="group-hover:-translate-x-1 transition-transform" />
-                </Link>
-                <a href="https://wa.me/00966570856657" className="bg-white text-slate-700 border-2 border-slate-200 text-center px-8 py-4 rounded-xl font-bold hover:border-saddad-gold hover:text-saddad-gold transition-all flex items-center justify-center">
-                  تواصل عبر واتساب
+                <a href="https://wa.me/00966570856657" target="_blank" rel="noopener noreferrer" className="bg-[#25D366] text-white text-center px-8 py-4 rounded-xl font-bold hover:bg-[#20b958] transition-all flex items-center justify-center gap-3 shadow-lg shadow-[#25D366]/25 group">
+                  <span className="text-base">اطلب استشارتك عبر واتساب</span>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" className="group-hover:scale-110 transition-transform"><path d="m22 16.92-3.13-1.04a2 2 0 0 0-2.19.46l-1.4 1.4a15.06 15.06 0 0 1-6.66-6.66l1.4-1.4a2 2 0 0 0 .46-2.19L9.44 4.36a2 2 0 0 0-2.31-1.32c-2.45.37-4.13 2.5-4.13 5 0 8.84 7.16 16 16 16 2.5 0 4.63-1.68 5-4.13a2 2 0 0 0-1.32-2.3Z"/></svg>
+                </a>
+                <a href="tel:00966570856657" dir="ltr" className="bg-white text-slate-700 border-2 border-slate-200 text-center px-8 py-4 rounded-xl font-bold hover:border-saddad-blue hover:text-saddad-blue transition-all flex items-center justify-center gap-3 group">
+                  <span className="text-base font-[family-name:inherit]" dir="rtl">اتصل بنا هاتفياً</span>
+                  <Phone size={18} strokeWidth={2.5} className="group-hover:rotate-12 transition-transform" />
                 </a>
               </motion.div>
               
