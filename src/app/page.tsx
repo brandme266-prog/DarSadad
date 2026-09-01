@@ -1,4 +1,4 @@
-﻿"use client";
+"use client";
 
 import Link from "next/link";
 import Image from "next/image";
@@ -54,16 +54,7 @@ export default function Home() {
                 في <strong className="font-bold text-slate-800">نجد السداد</strong>، نوفر لك حلولاً تمويلية معتمدة للتمويل العقاري والشخصي وخدمات تحصيل ديون الشركات باحترافية وسرعة فائقة.
               </motion.p>
               
-              <motion.div variants={itemVariants} className="flex flex-col sm:flex-row gap-4 justify-start">
-                <a href="https://wa.me/966570856657" target="_blank" rel="noopener noreferrer" className="bg-[#25D366] text-white text-center px-8 py-4 rounded-xl font-bold hover:bg-[#20b958] transition-all flex items-center justify-center gap-3 shadow-lg shadow-[#25D366]/25 group">
-                  <span className="text-base">اطلب استشارتك عبر واتساب</span>
-                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" className="group-hover:scale-110 transition-transform"><path d="m22 16.92-3.13-1.04a2 2 0 0 0-2.19.46l-1.4 1.4a15.06 15.06 0 0 1-6.66-6.66l1.4-1.4a2 2 0 0 0 .46-2.19L9.44 4.36a2 2 0 0 0-2.31-1.32c-2.45.37-4.13 2.5-4.13 5 0 8.84 7.16 16 16 16 2.5 0 4.63-1.68 5-4.13a2 2 0 0 0-1.32-2.3Z"/></svg>
-                </a>
-                <a href="tel:0570856657" dir="ltr" className="bg-white text-slate-700 border-2 border-slate-200 text-center px-8 py-4 rounded-xl font-bold hover:border-saddad-blue hover:text-saddad-blue transition-all flex items-center justify-center gap-3 group">
-                  <span className="text-base font-[family-name:inherit]" dir="rtl">اتصل بنا هاتفياً</span>
-                  <Phone size={18} strokeWidth={2.5} className="group-hover:rotate-12 transition-transform" />
-                </a>
-              </motion.div>
+
               
               <motion.div variants={itemVariants} className="mt-10 flex items-center gap-6">
                 <div className="flex -space-x-3 space-x-reverse">
@@ -118,11 +109,7 @@ export default function Home() {
                 </div>
               </motion.div>
 
-              {/* Floating Trust Badge */}
-              <div className="absolute -top-4 -left-4 bg-slate-900 text-white rounded-2xl px-4 py-3 shadow-lg flex items-center gap-2">
-                <ShieldCheck size={20} className="text-saddad-gold" />
-                <span className="text-xs font-bold">معاملات بنكية معتمدة</span>
-              </div>
+
             </motion.div>
 
           </div>
@@ -340,7 +327,7 @@ export default function Home() {
           </div>
 
           {/* Authority Logos Row */}
-          <div className="flex flex-wrap justify-center items-center gap-8 opacity-60">
+          <div className="flex flex-wrap justify-center items-center gap-8 opacity-60 mb-10">
             {[
               { label: "وزارة التجارة", en: "Ministry of Commerce" },
               { label: "هيئة الزكاة والضريبة", en: "ZATCA" },
@@ -354,6 +341,17 @@ export default function Home() {
                 <span className="text-[10px] text-slate-700 font-medium">{org.label}</span>
               </div>
             ))}
+          </div>
+
+          <div className="flex flex-col sm:flex-row gap-4 justify-center mt-8">
+            <a href="https://wa.me/966570856657" target="_blank" rel="noopener noreferrer" className="bg-[#25D366] text-white text-center px-10 py-4 rounded-xl font-bold hover:bg-[#20b958] transition-all flex items-center justify-center gap-3 shadow-lg shadow-[#25D366]/25 group">
+              <span className="text-base">اطلب استشارتك عبر واتساب</span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" className="group-hover:scale-110 transition-transform"><path d="m22 16.92-3.13-1.04a2 2 0 0 0-2.19.46l-1.4 1.4a15.06 15.06 0 0 1-6.66-6.66l1.4-1.4a2 2 0 0 0 .46-2.19L9.44 4.36a2 2 0 0 0-2.31-1.32c-2.45.37-4.13 2.5-4.13 5 0 8.84 7.16 16 16 16 2.5 0 4.63-1.68 5-4.13a2 2 0 0 0-1.32-2.3Z"/></svg>
+            </a>
+            <a href="tel:0570856657" dir="ltr" className="bg-white text-slate-700 border-2 border-slate-200 text-center px-10 py-4 rounded-xl font-bold hover:border-saddad-blue hover:text-saddad-blue transition-all flex items-center justify-center gap-3 group">
+              <span className="text-base font-[family-name:inherit]" dir="rtl">اتصل بنا هاتفياً</span>
+              <Phone size={18} strokeWidth={2.5} className="group-hover:rotate-12 transition-transform" />
+            </a>
           </div>
         </div>
       </section>
