@@ -79,53 +79,23 @@ export default function ContactPage() {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="lg:col-span-3 p-8 lg:p-10 bg-white rounded-2xl border border-slate-100 shadow-sm"
           >
-            <h2 className="text-2xl font-bold mb-2 text-slate-900">نموذج المراسلة</h2>
-            <p className="text-slate-500 font-light text-sm mb-8">املأ النموذج وسيقوم فريقنا بالتواصل معك في أقرب وقت.</p>
-            
-            <form className="space-y-5">
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
-                <div>
-                  <label className="block text-xs font-bold text-slate-700 mb-2">الاسم الكامل <span className="text-red-500">*</span></label>
-                  <input type="text" className="w-full bg-slate-50 border border-slate-200 rounded-lg px-4 py-3 text-sm focus:outline-none focus:ring-1 focus:ring-saddad-blue focus:border-saddad-blue transition-all" placeholder="أدخل اسمك الكريم" required />
-                </div>
-                
-                <div>
-                  <label className="block text-xs font-bold text-slate-700 mb-2">رقم الجوال <span className="text-red-500">*</span></label>
-                  <input type="tel" className="w-full bg-slate-50 border border-slate-200 rounded-lg px-4 py-3 text-sm focus:outline-none focus:ring-1 focus:ring-saddad-blue focus:border-saddad-blue transition-all" placeholder="05XXXXXXXX" dir="ltr" required />
-                </div>
+            <div className="flex flex-col items-center justify-center h-full text-center py-10">
+              <div className="w-20 h-20 bg-[#25D366]/10 rounded-full flex items-center justify-center mb-6">
+                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-[#25D366]"><path d="m22 16.92-3.13-1.04a2 2 0 0 0-2.19.46l-1.4 1.4a15.06 15.06 0 0 1-6.66-6.66l1.4-1.4a2 2 0 0 0 .46-2.19L9.44 4.36a2 2 0 0 0-2.31-1.32c-2.45.37-4.13 2.5-4.13 5 0 8.84 7.16 16 16 16 2.5 0 4.63-1.68 5-4.13a2 2 0 0 0-1.32-2.3Z"/></svg>
               </div>
-
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
-                <div>
-                  <label className="block text-xs font-bold text-slate-700 mb-2">البريد الإلكتروني</label>
-                  <input type="email" className="w-full bg-slate-50 border border-slate-200 rounded-lg px-4 py-3 text-sm focus:outline-none focus:ring-1 focus:ring-saddad-blue focus:border-saddad-blue transition-all" placeholder="example@domain.com" dir="ltr" />
-                </div>
-
-                <div>
-                  <label className="block text-xs font-bold text-slate-700 mb-2">نوع الخدمة المطلوبة</label>
-                  <select className="w-full bg-slate-50 border border-slate-200 rounded-lg px-4 py-3 text-sm focus:outline-none focus:ring-1 focus:ring-saddad-blue focus:border-saddad-blue transition-all text-slate-700">
-                    <option value="">اختر الخدمة...</option>
-                    <option value="تمويل عقاري">تمويل عقاري</option>
-                    <option value="تمويل شخصي">تمويل شخصي</option>
-                    <option value="تحصيل ديون">تحصيل ديون للشركات</option>
-                    <option value="سداد تعثرات">سداد تعثرات وتسوية ديون</option>
-                  </select>
-                </div>
-              </div>
-
-              <div>
-                <label className="block text-xs font-bold text-slate-700 mb-2">تفاصيل الطلب <span className="text-red-500">*</span></label>
-                <textarea rows={4} className="w-full bg-slate-50 border border-slate-200 rounded-lg px-4 py-3 text-sm focus:outline-none focus:ring-1 focus:ring-saddad-blue focus:border-saddad-blue transition-all resize-none" placeholder="اكتب تفاصيل طلبك أو استفسارك هنا..." required></textarea>
-              </div>
-
-              <button 
-                type="button" 
-                className="w-full bg-saddad-blue text-white font-medium py-3.5 rounded-lg hover:bg-slate-800 transition-colors flex items-center justify-center gap-2 mt-2 text-sm"
+              <h2 className="text-2xl font-bold mb-3 text-slate-900">تواصل معنا مباشرة عبر واتساب</h2>
+              <p className="text-slate-500 font-light text-sm mb-8 max-w-sm mx-auto">لضمان سرعة الرد وتقديم خدمة أفضل، نرجو منك التواصل معنا مباشرة عبر تطبيق واتساب وسيقوم فريقنا بخدمتك فوراً.</p>
+              
+              <a 
+                href="https://wa.me/00966570856657" 
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-full sm:w-auto bg-[#25D366] text-white font-bold px-10 py-4 rounded-xl hover:bg-[#20b958] transition-all flex items-center justify-center gap-3 text-lg shadow-lg shadow-[#25D366]/20"
               >
-                <span>إرسال الطلب</span>
-                <Send size={16} />
-              </button>
-            </form>
+                <span>ابدأ المحادثة الآن</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="m22 16.92-3.13-1.04a2 2 0 0 0-2.19.46l-1.4 1.4a15.06 15.06 0 0 1-6.66-6.66l1.4-1.4a2 2 0 0 0 .46-2.19L9.44 4.36a2 2 0 0 0-2.31-1.32c-2.45.37-4.13 2.5-4.13 5 0 8.84 7.16 16 16 16 2.5 0 4.63-1.68 5-4.13a2 2 0 0 0-1.32-2.3Z"/></svg>
+              </a>
+            </div>
           </motion.div>
 
         </div>
