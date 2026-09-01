@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import Link from "next/link";
 import Image from "next/image";
@@ -40,7 +40,7 @@ export default function Navbar() {
           <div className="flex gap-5 items-center">
             <a href="mailto:info@brand1me.com" className="hover:text-white transition-colors">info@brand1me.com</a>
             <span className="text-slate-700">|</span>
-            <a href="https://wa.me/00966570856657" dir="ltr" className="font-bold text-white tracking-wide hover:text-saddad-gold transition-colors" aria-label="تواصل معنا عبر واتساب">00966570856657</a>
+            <a href="https://wa.me/966570856657" dir="ltr" className="font-bold text-white tracking-wide hover:text-saddad-gold transition-colors" aria-label="تواصل معنا عبر واتساب">+966570856657</a>
           </div>
         </div>
       </div>
@@ -94,7 +94,7 @@ export default function Navbar() {
             {/* CTA Button */}
             <div className="hidden md:flex items-center">
               <a
-                href="https://wa.me/00966570856657"
+                href="https://wa.me/966570856657"
                 className="group bg-saddad-gold text-slate-950 px-6 py-2.5 rounded-full font-bold text-xs hover:bg-saddad-gold-light transition-all flex items-center gap-2 shadow-sm hover:shadow-md"
               >
                 <PhoneCall size={15} strokeWidth={2.5} />
@@ -137,7 +137,7 @@ export default function Navbar() {
                 ))}
                 <div className="h-px bg-slate-100 my-2 mx-2"></div>
                 <a 
-                  href="https://wa.me/00966570856657" 
+                  href="https://wa.me/966570856657" 
                   className="bg-saddad-gold text-slate-950 p-3.5 rounded-xl font-bold text-center flex items-center justify-center gap-2 text-sm shadow-md"
                 >
                   <PhoneCall size={18} />

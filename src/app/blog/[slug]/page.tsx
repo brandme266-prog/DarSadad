@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+﻿import type { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
 import { notFound } from "next/navigation";
@@ -373,7 +373,7 @@ const articleContents: Record<string, {
       },
       {
         heading: "كيف تتواصل معنا بكل سهولة؟",
-        body: "نحن في شركة نجد السداد نولي أهمية كبرى لخدمة العملاء. يمكنك التواصل معنا للحصول على استشارة مالية مجانية أو لتقديم طلباتك بكل سهولة. الرقم الموحد لخدمة العملاء عبر الاتصال الهاتفي وتطبيق واتس اب هو: 00966570856657.",
+        body: "نحن في شركة نجد السداد نولي أهمية كبرى لخدمة العملاء. يمكنك التواصل معنا للحصول على استشارة مالية مجانية أو لتقديم طلباتك بكل سهولة. الرقم الموحد لخدمة العملاء عبر الاتصال الهاتفي وتطبيق واتس اب هو: +966570856657.",
         note: "استشرنا الآن مجاناً! فريقنا متواجد للرد على كافة استفساراتك حول سداد المديونيات أو طلبات التمويل.",
       },
       {
@@ -670,7 +670,7 @@ export default async function ArticleDetailPage({ params }: Props) {
             <p className="text-slate-300 text-sm font-light max-w-md mx-auto leading-relaxed">
               مستشارونا الماليون في نجد السداد متاحون الآن للرد على كافة استفساراتك وتقديم دراسة شاملة ومجانية لحالتك.
             </p>
-            <a href="https://wa.me/00966570856657" className="bg-saddad-gold text-slate-950 px-8 py-4 rounded-xl font-bold text-sm hover:bg-saddad-gold-light transition-all inline-flex items-center gap-2 shadow-lg">
+            <a href="https://wa.me/966570856657" className="bg-saddad-gold text-slate-950 px-8 py-4 rounded-xl font-bold text-sm hover:bg-saddad-gold-light transition-all inline-flex items-center gap-2 shadow-lg">
               <PhoneCall size={18} />
               <span>تواصل معنا عبر واتساب الآن</span>
             </a>

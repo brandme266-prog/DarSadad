@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import { motion } from "framer-motion";
 import { MapPin, Phone, Mail, Send } from "lucide-react";
@@ -50,7 +50,7 @@ export default function ContactPage() {
                 </div>
                 <div>
                   <h3 className="font-bold text-sm mb-1 text-slate-900">الهاتف الموحد</h3>
-                  <p className="text-slate-500 text-sm font-light tracking-wide" dir="ltr">00966570856657</p>
+                  <p className="text-slate-500 text-sm font-light tracking-wide" dir="ltr">+966570856657</p>
                 </div>
               </div>
 
@@ -66,7 +66,7 @@ export default function ContactPage() {
             </div>
 
             <div className="mt-12 pt-8 border-t border-slate-200">
-              <a href="https://wa.me/00966570856657" className="w-full bg-saddad-blue hover:bg-slate-800 text-white font-medium py-3 rounded-lg flex items-center justify-center gap-2 transition-colors text-sm">
+              <a href="https://wa.me/966570856657" className="w-full bg-saddad-blue hover:bg-slate-800 text-white font-medium py-3 rounded-lg flex items-center justify-center gap-2 transition-colors text-sm">
                 <span>تحدث معنا عبر واتساب</span>
               </a>
             </div>
@@ -87,7 +87,7 @@ export default function ContactPage() {
               <p className="text-slate-500 font-light text-sm mb-8 max-w-sm mx-auto">لضمان سرعة الرد وتقديم خدمة أفضل، نرجو منك التواصل معنا مباشرة عبر تطبيق واتساب وسيقوم فريقنا بخدمتك فوراً.</p>
               
               <a 
-                href="https://wa.me/00966570856657" 
+                href="https://wa.me/966570856657" 
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-full sm:w-auto bg-[#25D366] text-white font-bold px-10 py-4 rounded-xl hover:bg-[#20b958] transition-all flex items-center justify-center gap-3 text-lg shadow-lg shadow-[#25D366]/20"

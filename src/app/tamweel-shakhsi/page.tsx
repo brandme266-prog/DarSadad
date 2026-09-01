@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+﻿import type { Metadata } from "next";
 import Link from "next/link";
 import { CheckCircle2, PhoneCall, ArrowLeft, Users, Clock, Shield, TrendingUp, ChevronDown } from "lucide-react";
 
@@ -54,7 +54,7 @@ export default function TamweelShakhsiPage() {
             نوفر لك في <strong className="font-bold text-slate-800">نجد السداد</strong> أفضل برامج التمويل الشخصي والقرض الشخصي بالرياض للموظفين الحكوميين وموظفي القطاع الخاص والعسكريين والمتقاعدين، بهامش ربح تنافسي وأقساط ميسرة وموافقة سريعة.
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
-            <a href="https://wa.me/00966570856657" className="bg-saddad-gold text-slate-950 text-center px-8 py-4 rounded-xl font-bold text-base hover:bg-saddad-gold-light transition-all flex items-center justify-center gap-2 shadow-lg">
+            <a href="https://wa.me/966570856657" className="bg-saddad-gold text-slate-950 text-center px-8 py-4 rounded-xl font-bold text-base hover:bg-saddad-gold-light transition-all flex items-center justify-center gap-2 shadow-lg">
               <PhoneCall size={20} /> اطلب تمويلك الآن عبر واتساب
             </a>
             <Link href="/contact" className="bg-white text-slate-800 border-2 border-slate-200 text-center px-8 py-4 rounded-xl font-bold hover:border-saddad-gold transition-all flex items-center justify-center gap-2">
@@ -160,7 +160,7 @@ export default function TamweelShakhsiPage() {
         <div className="relative z-10 max-w-3xl mx-auto px-4">
           <h2 className="text-3xl font-bold mb-4">هل تحتاج تمويلاً شخصياً عاجلاً في الرياض؟</h2>
           <p className="text-slate-300 font-light mb-8">تواصل معنا الآن في نجد السداد وسيقدم لك فريقنا المتخصص أفضل عرض تمويل شخصي يناسب دخلك واحتياجاتك.</p>
-          <a href="https://wa.me/00966570856657" className="bg-saddad-gold text-slate-950 px-10 py-4 rounded-xl font-bold text-base hover:bg-saddad-gold-light transition-all inline-flex items-center gap-2 shadow-lg">
+          <a href="https://wa.me/966570856657" className="bg-saddad-gold text-slate-950 px-10 py-4 rounded-xl font-bold text-base hover:bg-saddad-gold-light transition-all inline-flex items-center gap-2 shadow-lg">
             <PhoneCall size={20} /> احصل على عرض تمويل الآن
           </a>
         </div>

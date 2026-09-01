@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+﻿import type { Metadata } from "next";
 import Link from "next/link";
 import { CheckCircle2, PhoneCall, ArrowLeft, ChevronDown, ShieldCheck } from "lucide-react";
 
@@ -33,7 +33,7 @@ export default function SadadTathorratPage() {
             تعاني من تعثرات بنكية أو قروض متأخرة؟ فريق نجد السداد يتولى التفاوض مع البنوك والجهات الدائنة لإعادة جدولة ديونك وتسوية تعثراتك بخطط سداد ميسرة وتحسين سجلك في سمة.
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
-            <a href="https://wa.me/00966570856657" className="bg-saddad-gold text-slate-950 text-center px-8 py-4 rounded-xl font-bold hover:bg-saddad-gold-light transition-all flex items-center justify-center gap-2 shadow-lg">
+            <a href="https://wa.me/966570856657" className="bg-saddad-gold text-slate-950 text-center px-8 py-4 rounded-xl font-bold hover:bg-saddad-gold-light transition-all flex items-center justify-center gap-2 shadow-lg">
               <PhoneCall size={20} /> تواصل مع خبير التعثرات
             </a>
             <Link href="/contact" className="bg-white text-slate-800 border-2 border-slate-200 text-center px-8 py-4 rounded-xl font-bold hover:border-saddad-gold transition-all flex items-center justify-center gap-2">
@@ -92,7 +92,7 @@ export default function SadadTathorratPage() {
         <div className="relative z-10 max-w-3xl mx-auto px-4">
           <h2 className="text-3xl font-bold mb-4">تعثرت مالياً؟ نحن هنا لمساعدتك</h2>
           <p className="text-slate-300 font-light mb-8">لا تتركها تتراكم. تواصل مع فريق نجد السداد الآن لدراسة حالتك مجاناً وإيجاد أفضل حل لتعثراتك البنكية في الرياض.</p>
-          <a href="https://wa.me/00966570856657" className="bg-saddad-gold text-slate-950 px-10 py-4 rounded-xl font-bold hover:bg-saddad-gold-light transition-all inline-flex items-center gap-2">
+          <a href="https://wa.me/966570856657" className="bg-saddad-gold text-slate-950 px-10 py-4 rounded-xl font-bold hover:bg-saddad-gold-light transition-all inline-flex items-center gap-2">
             <PhoneCall size={20} /> ابدأ حل تعثراتك الآن
           </a>
         </div>
