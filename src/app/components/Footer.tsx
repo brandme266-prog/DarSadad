@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { MapPin, Phone, Mail, Link as LinkIcon, Share2 } from "lucide-react";
 
 export default function Footer() {
@@ -11,11 +12,17 @@ export default function Footer() {
           
           {/* Brand Info */}
           <div className="lg:col-span-1">
-            <Link href="/" className="flex items-center gap-3 mb-6">
-              <div className="w-9 h-9 bg-saddad-gold rounded-xl flex items-center justify-center text-slate-950 font-bold text-lg">
-                د
+            <Link href="/" className="flex flex-col gap-4 mb-6">
+              <div className="bg-white rounded-2xl p-2 inline-flex items-center justify-center w-fit">
+                <Image 
+                  src="/images/logo.png" 
+                  alt="نجد السداد" 
+                  width={100} 
+                  height={100} 
+                  className="w-20 h-20 sm:w-24 sm:h-24 object-contain"
+                />
               </div>
-              <span className="font-bold text-xl text-white tracking-tight">نجد السداد</span>
+              <span className="font-bold text-2xl text-white tracking-tight">نجد السداد</span>
             </Link>
             <p className="text-slate-400 text-sm font-light leading-relaxed mb-6">
               مؤسسة معتمدة ومتخصصة في تقديم استشارات وحلول التمويل العقاري والشخصي وسداد التعثرات وتحصيل ديون الشركات بالرياض.

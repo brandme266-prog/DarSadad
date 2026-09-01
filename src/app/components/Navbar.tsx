@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
 import { useState, useEffect } from "react";
 import { PhoneCall, Menu, X, ArrowUpLeft } from "lucide-react";
@@ -48,18 +49,21 @@ export default function Navbar() {
         initial={{ y: -50, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.5 }}
-        className={`sticky top-0 z-50 transition-all duration-300 ${
-          scrolled ? "glass-light shadow-sm py-3" : "bg-white py-4 border-b border-slate-100"
-        }`}
+        className={`relative z-50 transition-all duration-300 bg-white py-2.5 border-b border-slate-100`}
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center">
             
             {/* Logo */}
-            <Link href="/" className="flex items-center gap-3 group">
-              <div className="w-10 h-10 bg-slate-900 rounded-xl flex items-center justify-center text-saddad-gold font-bold text-xl group-hover:bg-saddad-gold group-hover:text-slate-950 transition-all shadow-sm">
-                د
-              </div>
+            <Link href="/" className="flex items-center gap-2 group">
+              <Image 
+                src="/images/logo.png" 
+                alt="نجد السداد للحلول المالية" 
+                width={70} 
+                height={70} 
+                className="w-16 h-16 sm:w-20 sm:h-20 object-contain transition-transform group-hover:scale-105"
+                priority
+              />
               <div className="flex flex-col">
                 <span className="font-bold text-xl text-slate-900 tracking-tight">نجد السداد</span>
                 <span className="text-[10px] text-slate-400 tracking-wider font-semibold">للحلول المالية والتطوير العقاري</span>
