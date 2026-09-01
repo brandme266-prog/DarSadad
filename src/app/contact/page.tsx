@@ -60,7 +60,7 @@ export default function ContactPage() {
                 </div>
                 <div>
                   <h3 className="font-bold text-sm mb-1 text-slate-900">البريد الإلكتروني</h3>
-                  <p className="text-slate-500 text-sm font-light">info@najdsadad.com</p>
+                  <p className="text-slate-500 text-sm font-light">info@brand1me.com</p>
                 </div>
               </div>
             </div>

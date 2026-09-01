@@ -150,7 +150,7 @@ export default function TamweelAqariPage() {
         "description": "تمويل عقاري بدون دفعة أولى للفلل والشقق والأراضي في الرياض.",
         "offers": {
           "@type": "Offer",
-          "url": "https://najdsadad.com/tamweel-aqari",
+          "url": "https://brand1me.com/tamweel-aqari",
           "priceCurrency": "SAR",
           "price": "0",
           "eligibleRegion": {

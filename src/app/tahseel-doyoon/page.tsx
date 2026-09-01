@@ -115,7 +115,7 @@ export default function TahseelDoyoonPage() {
         "description": "خدمات تحصيل ديون الشركات والمؤسسات واسترداد المستحقات المالية والتجارية باحترافية في الرياض.",
         "offers": {
           "@type": "Offer",
-          "url": "https://najdsadad.com/tahseel-doyoon",
+          "url": "https://brand1me.com/tahseel-doyoon",
           "priceCurrency": "SAR",
           "price": "0",
           "eligibleRegion": {

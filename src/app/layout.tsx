@@ -11,7 +11,7 @@ const almarai = Almarai({
   display: "swap",
 });
 
-const siteUrl = "https://najdsadad.com";
+const siteUrl = "https://brand1me.com";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
@@ -70,7 +70,7 @@ const organizationSchema = {
   image: `${siteUrl}/images/hero-banner.jpg`,
   description: "شركة نجد السداد للحلول المالية والتطوير العقاري بالرياض، متخصصون في التمويل الشخصي والعقاري وسداد التعثرات وتحصيل الديون وخدمات تحسين السجل الائتماني في سمة.",
   telephone: "00966570856657",
-  email: "info@najdsadad.com",
+  email: "info@brand1me.com",
   address: {
     "@type": "PostalAddress",
     streetAddress: "الرياض، حي المهدية، السيل الكبير",

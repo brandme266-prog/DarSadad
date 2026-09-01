@@ -123,7 +123,7 @@ export default function KhadamatSimahPage() {
         "description": "خدمات متكاملة لتحسين السجل الائتماني، رفع تقييم سمة، الاستعلام عن سمة، ותصحيح البيانات الخاطئة في الرياض.",
         "offers": {
           "@type": "Offer",
-          "url": "https://najdsadad.com/khadamat-simah",
+          "url": "https://brand1me.com/khadamat-simah",
           "priceCurrency": "SAR",
           "price": "0",
           "eligibleRegion": {

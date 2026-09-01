@@ -198,7 +198,7 @@ export default function TamweelShakhsiPage() {
         "description": "تمويل شخصي سريع حتى مليون ريال بدون كفيل للموظفين في الجهات الحكومية والقطاع الخاص في الرياض.",
         "offers": {
           "@type": "Offer",
-          "url": "https://najdsadad.com/tamweel-shakhsi",
+          "url": "https://brand1me.com/tamweel-shakhsi",
           "priceCurrency": "SAR",
           "price": "0",
           "eligibleRegion": {

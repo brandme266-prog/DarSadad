@@ -453,17 +453,40 @@ const articleContents: Record<string, {
 };
 
 // ===================== مكونات المحتوى =====================
+const internalLinks = [
+  { keyword: "دار السداد", url: "https://brand1me.com" },
+  { keyword: "نجد السداد", url: "https://brand1me.com" },
+  { keyword: "تحصيل الديون", url: "/tahseel-doyoon" },
+  { keyword: "تحصيل ديون", url: "/tahseel-doyoon" },
+  { keyword: "سداد التعثرات", url: "/sadad-tathorrat" },
+  { keyword: "سداد تعثرات", url: "/sadad-tathorrat" },
+  { keyword: "التمويل الشخصي", url: "/tamweel-shakhsi" },
+  { keyword: "تمويل شخصي", url: "/tamweel-shakhsi" },
+  { keyword: "التمويل العقاري", url: "/tamweel-aqari" },
+  { keyword: "تمويل عقاري", url: "/tamweel-aqari" },
+];
+
+function renderWithLinks(text: string) {
+  let html = text;
+  internalLinks.forEach(link => {
+    if (!html.includes('href=')) {
+      html = html.replace(link.keyword, `<a href="${link.url}" class="text-saddad-gold font-bold hover:underline" title="${link.keyword}">${link.keyword}</a>`);
+    }
+  });
+  return <span dangerouslySetInnerHTML={{ __html: html }} />;
+}
+
 function ContentSection({ section }: { section: typeof articleContents[string]["sections"][0] }) {
   return (
     <div className="space-y-4">
       <h2 className="text-2xl font-bold text-slate-900 pt-6 border-t border-slate-100">{section.heading}</h2>
-      {section.body && <p className="text-slate-600 font-light leading-loose">{section.body}</p>}
+      {section.body && <p className="text-slate-600 font-light leading-loose">{renderWithLinks(section.body)}</p>}
       {section.numberedList && (
         <ol className="space-y-3 mr-4">
           {section.numberedList.map((item, i) => (
             <li key={i} className="flex items-start gap-3">
               <span className="shrink-0 w-7 h-7 rounded-full bg-saddad-gold text-slate-950 text-xs font-bold flex items-center justify-center mt-0.5">{i + 1}</span>
-              <span className="text-slate-700 font-light leading-relaxed">{item}</span>
+              <span className="text-slate-700 font-light leading-relaxed">{renderWithLinks(item)}</span>
             </li>
           ))}
         </ol>
@@ -473,7 +496,7 @@ function ContentSection({ section }: { section: typeof articleContents[string]["
           {section.list.map((item, i) => (
             <li key={i} className="flex items-start gap-2">
               <CheckCircle2 size={16} className="text-saddad-gold shrink-0 mt-1" />
-              <span className="text-slate-700 font-light leading-relaxed">{item}</span>
+              <span className="text-slate-700 font-light leading-relaxed">{renderWithLinks(item)}</span>
             </li>
           ))}
         </ul>

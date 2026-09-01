@@ -124,7 +124,7 @@ export default function SadadTathorratPage() {
         "description": "حلول مضمونة لسداد التعثرات البنكية، وتسوية الديون المتأخرة وإعادة جدولة القروض بالرياض وتحسين سجل سمة.",
         "offers": {
           "@type": "Offer",
-          "url": "https://najdsadad.com/sadad-tathorrat",
+          "url": "https://brand1me.com/sadad-tathorrat",
           "priceCurrency": "SAR",
           "price": "0",
           "eligibleRegion": {
