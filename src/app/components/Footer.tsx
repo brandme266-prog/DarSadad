@@ -8,10 +8,10 @@ export default function Footer() {
   return (
     <footer className="bg-slate-900 text-white border-t border-slate-800 pt-16 pb-10">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-8 lg:gap-12 mb-12">
           
           {/* Brand Info */}
-          <div className="lg:col-span-1">
+          <div className="lg:col-span-4 lg:pl-8">
             <Link href="/" className="flex flex-col gap-4 mb-6">
               <div className="bg-white rounded-2xl p-2 inline-flex items-center justify-center w-fit">
                 <Image 
@@ -30,7 +30,7 @@ export default function Footer() {
           </div>
 
           {/* Quick Links */}
-          <div>
+          <div className="lg:col-span-2">
             <h3 className="text-sm font-bold text-white mb-6 border-r-2 border-saddad-gold pr-3">روابط سريعة</h3>
             <ul className="space-y-3.5 text-sm font-light text-slate-400">
               <li><Link href="/" className="hover:text-saddad-gold transition-colors">الرئيسية</Link></li>
@@ -41,7 +41,7 @@ export default function Footer() {
           </div>
 
           {/* Services */}
-          <div>
+          <div className="lg:col-span-3">
             <h3 className="text-sm font-bold text-white mb-6 border-r-2 border-saddad-gold pr-3">أبرز خدماتنا</h3>
             <ul className="space-y-3.5 text-sm font-light text-slate-400">
               <li><Link href="/services" className="hover:text-saddad-gold transition-colors">تمويل عقاري بدون دفعة أولى</Link></li>
@@ -52,7 +52,7 @@ export default function Footer() {
           </div>
 
           {/* Contact Info */}
-          <div>
+          <div className="lg:col-span-3">
             <h3 className="text-sm font-bold text-white mb-6 border-r-2 border-saddad-gold pr-3">معلومات التواصل</h3>
             <div className="space-y-4 text-sm font-light text-slate-400">
               <div className="flex items-start gap-3">
