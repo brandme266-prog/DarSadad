@@ -75,9 +75,15 @@ export default function Footer() {
         </div>
         
         {/* Copyrights */}
-        <div className="border-t border-slate-800 pt-8 flex flex-col sm:flex-row justify-between items-center text-xs font-light text-slate-500">
+        <div className="border-t border-slate-800 pt-8 flex flex-col lg:flex-row justify-between items-center text-xs font-light text-slate-500 gap-4">
           <p>© 2026 شركة نجد السداد للحلول المالية والاستشارات. جميع الحقوق محفوظة.</p>
-          <div className="mt-4 sm:mt-0 flex gap-6">
+          <div className="flex items-center gap-1 font-medium bg-slate-800/50 px-4 py-2 rounded-full border border-slate-700">
+            <span>صُنع بكل فخر بواسطة</span>
+            <a href="https://brand1me.com" target="_blank" rel="noopener noreferrer" className="text-saddad-gold hover:text-white transition-colors mx-1">
+              شركة BrandMe
+            </a>
+          </div>
+          <div className="flex gap-6">
             <a href="#" className="hover:text-slate-400 transition-colors">سياسة الخصوصية</a>
             <a href="#" className="hover:text-slate-400 transition-colors">الشروط والأحكام</a>
           </div>
