@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import Link from "next/link";
 import Image from "next/image";
@@ -38,7 +38,7 @@ export default function Navbar() {
             <span className="text-saddad-gold font-medium">مؤسسة مالية وتمويلية معتمدة</span>
           </div>
           <div className="flex gap-5 items-center">
-            <a href="https://wa.me/966570856657" dir="ltr" className="font-bold text-white tracking-wide hover:text-saddad-gold transition-colors" aria-label="تواصل معنا عبر واتساب">+966570856657</a>
+            <a href="https://wa.me/966570856657" dir="ltr" className="font-bold text-white tracking-wide hover:text-saddad-gold transition-colors" aria-label="تواصل معنا عبر واتساب">0570856657</a>
           </div>
         </div>
       </div>

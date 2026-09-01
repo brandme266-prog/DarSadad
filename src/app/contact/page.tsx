@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import { motion } from "framer-motion";
 import { MapPin, Phone, Mail, Send } from "lucide-react";
@@ -50,7 +50,7 @@ export default function ContactPage() {
                 </div>
                 <div>
                   <h3 className="font-bold text-sm mb-1 text-slate-900">الهاتف الموحد</h3>
-                  <p className="text-slate-500 text-sm font-light tracking-wide" dir="ltr">+966570856657</p>
+                  <p className="text-slate-500 text-sm font-light tracking-wide" dir="ltr">0570856657</p>
                 </div>
               </div>
 

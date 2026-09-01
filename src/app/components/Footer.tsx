@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import Link from "next/link";
 import Image from "next/image";
@@ -63,7 +63,7 @@ export default function Footer() {
 
               <div className="flex items-center gap-3">
                 <Phone size={18} strokeWidth={1.5} className="text-saddad-gold shrink-0" />
-                <a href="tel:+966570856657" dir="ltr" className="hover:text-white transition-colors font-medium" aria-label="اتصل بنا هاتفياً">+966570856657</a>
+                <a href="tel:0570856657" dir="ltr" className="hover:text-white transition-colors font-medium" aria-label="اتصل بنا هاتفياً">0570856657</a>
               </div>
 
 

@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+﻿import type { Metadata } from "next";
 import { Almarai } from "next/font/google";
 import "./globals.css";
 import Navbar from "./components/Navbar";
@@ -70,7 +70,7 @@ const organizationSchema = {
   logo: { "@type": "ImageObject", url: `${siteUrl}/images/logo.png`, width: 200, height: 200 },
   image: `${siteUrl}/images/hero-banner.jpg`,
   description: "شركة نجد السداد للحلول المالية والتطوير العقاري بالرياض، متخصصون في التمويل الشخصي والعقاري وسداد التعثرات وتحصيل الديون وخدمات تحسين السجل الائتماني في سمة.",
-  telephone: "+966570856657",
+  telephone: "0570856657",
   address: {
     "@type": "PostalAddress",
     streetAddress: "الرياض، حي المهدية، السيل الكبير",
@@ -102,7 +102,7 @@ const organizationSchema = {
   ],
   contactPoint: {
     "@type": "ContactPoint",
-    telephone: "+966570856657",
+    telephone: "0570856657",
     contactType: "customer service",
     areaServed: "SA",
     availableLanguage: "Arabic",
