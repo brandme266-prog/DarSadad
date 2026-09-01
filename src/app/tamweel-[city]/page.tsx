@@ -1,39 +1,44 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import Link from "next/link";
-import { CheckCircle2, PhoneCall, ArrowLeft, MapPin, ChevronDown } from "lucide-react";
+import { CheckCircle2, PhoneCall, ArrowLeft, MapPin, ChevronDown, CheckSquare } from "lucide-react";
 
 const cities: Record<string, { name: string; services: string[]; desc: string }> = {
   jeddah: {
     name: "جدة",
-    services: ["تمويل شخصي جدة", "تمويل عقاري جدة", "سداد تعثرات جدة", "تحصيل ديون جدة", "خدمات سمة جدة"],
-    desc: "المركز التجاري الأول في المملكة ثاني أكبر مدينة"
+    services: ["تمويل شخصي جدة", "تمويل عقاري جدة", "سداد تعثرات جدة", "تحصيل ديون جدة", "خدمات سمة جدة", "تمويل شخصي بدون كفيل جدة", "قرض عقاري جدة", "تسوية ديون بنكية جدة", "استشارات مالية جدة"],
+    desc: "المركز التجاري الأول في المملكة وثاني أكبر مدينة"
   },
   makkah: {
     name: "مكة المكرمة",
-    services: ["تمويل شخصي مكة", "تمويل عقاري مكة", "سداد تعثرات مكة", "تحصيل ديون مكة", "خدمات سمة مكة"],
+    services: ["تمويل شخصي مكة", "تمويل عقاري مكة", "سداد تعثرات مكة", "تحصيل ديون مكة", "خدمات سمة مكة", "قروض ميسرة مكة", "تمويل عقاري مكة المكرمة", "تسوية قروض مكة"],
     desc: "أقدس البقاع وعاصمة منطقة مكة المكرمة"
   },
   dammam: {
     name: "الدمام",
-    services: ["تمويل شخصي الدمام", "تمويل عقاري الدمام", "سداد تعثرات الدمام", "تحصيل ديون الدمام", "خدمات سمة الدمام"],
+    services: ["تمويل شخصي الدمام", "تمويل عقاري الدمام", "سداد تعثرات الدمام", "تحصيل ديون الدمام", "خدمات سمة الدمام", "قرض شخصي الدمام", "تمويل عقاري بدون دفعة الدمام", "شركة تحصيل ديون الدمام"],
     desc: "عاصمة المنطقة الشرقية وبوابة الخليج"
   },
   khobar: {
     name: "الخبر",
-    services: ["تمويل شخصي الخبر", "تمويل عقاري الخبر", "سداد تعثرات الخبر", "تحصيل ديون الخبر", "خدمات سمة الخبر"],
+    services: ["تمويل شخصي الخبر", "تمويل عقاري الخبر", "سداد تعثرات الخبر", "تحصيل ديون الخبر", "خدمات سمة الخبر", "سيولة فورية الخبر", "تمويل الشركات الخبر", "مكتب تحصيل ديون الخبر"],
     desc: "المدينة الاقتصادية في المنطقة الشرقية"
   },
   taif: {
     name: "الطائف",
-    services: ["تمويل شخصي الطائف", "تمويل عقاري الطائف", "سداد تعثرات الطائف", "تحصيل ديون الطائف", "خدمات سمة الطائف"],
+    services: ["تمويل شخصي الطائف", "تمويل عقاري الطائف", "سداد تعثرات الطائف", "تحصيل ديون الطائف", "خدمات سمة الطائف", "تمويل عقاري مدعوم الطائف", "سداد مديونيات الطائف"],
     desc: "عاصمة منطقة مكة الصيفية والمدينة الجبلية الجميلة"
   },
   medina: {
     name: "المدينة المنورة",
-    services: ["تمويل شخصي المدينة المنورة", "تمويل عقاري المدينة المنورة", "سداد تعثرات المدينة المنورة", "تحصيل ديون المدينة المنورة", "خدمات سمة المدينة المنورة"],
+    services: ["تمويل شخصي المدينة المنورة", "تمويل عقاري المدينة المنورة", "سداد تعثرات المدينة المنورة", "تحصيل ديون المدينة المنورة", "خدمات سمة المدينة المنورة", "قروض المدينة المنورة", "تمويل عقاري المدينة", "سداد سمة المدينة المنورة"],
     desc: "ثاني أقدس البقاع في الإسلام"
   },
+  riyadh: {
+    name: "الرياض",
+    services: ["تمويل شخصي الرياض", "تمويل عقاري الرياض", "سداد تعثرات الرياض", "تحصيل ديون الرياض", "خدمات سمة الرياض", "تمويل شخصي بدون كفيل الرياض", "قرض شخصي سريع الرياض", "تمويل شخصي مليون ريال", "تسهيلات شخصية الرياض"],
+    desc: "عاصمة المملكة وأكبر مراكزها المالية"
+  }
 };
 
 interface Props {
@@ -46,8 +51,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   if (!cityData) return { title: "المدينة غير موجودة" };
   
   return {
-    title: `تمويل شخصي وعقاري ${cityData.name} | سداد تعثرات وتحصيل ديون | نجد السداد`,
-    description: `أفضل خدمات التمويل الشخصي والعقاري وسداد التعثرات وتحصيل الديون وخدمات سمة في ${cityData.name}. نجد السداد: خبرة عالية وحلول مالية متكاملة. تواصل الآن.`,
+    title: `${cityData.services[0]} | ${cityData.services[1]} | سداد تعثرات وتحصيل ديون | نجد السداد`,
+    description: `هل تبحث عن ${cityData.services[0]} أو ${cityData.services[1]}؟ تقدم شركة نجد السداد أفضل الحلول المالية في ${cityData.name} تشمل سداد التعثرات وتحصيل الديون.`,
     keywords: cityData.services,
   };
 }
@@ -62,26 +67,26 @@ export default async function CityPage({ params }: Props) {
   if (!cityData) notFound();
 
   const faqs = [
-    { q: `هل تقدم نجد السداد خدمات التمويل الشخصي في ${cityData.name}؟`, a: `نعم، تقدم نجد السداد جميع خدماتها المالية بما فيها التمويل الشخصي والعقاري وسداد التعثرات وتحصيل الديون وخدمات سمة لعملاء ${cityData.name} وضواحيها.` },
-    { q: `ما هو الحد الأقصى للتمويل الشخصي في ${cityData.name}؟`, a: `يتوفر تمويل شخصي يصل حتى مليون ريال في ${cityData.name} للموظفين المؤهلين في القطاعين الحكومي والخاص بأقساط ميسرة وهامش ربح تنافسي.` },
-    { q: `كيف يمكنني التواصل مع نجد السداد من ${cityData.name}؟`, a: `يمكنك التواصل معنا عبر واتساب على الرقم 966570856657+ أو عبر البريد الإلكتروني info@najdsadad.com ونحن نخدم عملاء ${cityData.name} عن بُعد وبالحضور الشخصي.` },
+    { q: `هل تقدم نجد السداد خدمات التمويل الشخصي في ${cityData.name}؟`, a: `نعم، نحن نقدم خدمات ${cityData.services[0]} بأفضل المعايير. نجد السداد معتمدة لتقديم التمويل الشخصي والعقاري لجميع عملاء ${cityData.name}.` },
+    { q: `ما هي الشروط لطلب ${cityData.services[1]}؟`, a: `يمكنك الحصول على ${cityData.services[1]} إذا كنت موظفاً حكومياً أو في شركة معتمدة، ويمكن لفريقنا في ${cityData.name} مساعدتك في استخراج الموافقة وتخطي الدفعة الأولى.` },
+    { q: `كيف يمكنني تصفية سجل سمة عبر ${cityData.services[2]}؟`, a: `يتولى خبراؤنا معالجة المديونيات وتسويتها بشكل قانوني وسريع لضمان تنظيف سجلك الائتماني في سمة لكل عملاء ${cityData.name}.` },
   ];
 
   return (
-    <div className="bg-white min-h-screen">
+    <div className="bg-white min-h-screen pb-24">
       <section className="relative pt-32 pb-20 bg-slate-50 border-b border-slate-100 overflow-hidden">
         <div className="absolute top-0 right-0 w-96 h-96 bg-saddad-gold/5 rounded-full blur-3xl"></div>
         <div className="max-w-5xl mx-auto px-4 sm:px-6 relative z-10 text-right">
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-saddad-gold/10 border border-saddad-gold/20 mb-5">
             <MapPin size={14} className="text-saddad-gold" />
-            <span className="text-xs font-bold text-saddad-gold">خدماتنا متاحة في {cityData.name} وضواحيها</span>
+            <span className="text-xs font-bold text-saddad-gold">خدماتنا المالية متاحة في {cityData.name}</span>
           </div>
           <h1 className="text-4xl md:text-5xl font-bold text-slate-900 leading-tight mb-5">
-            خدمات نجد السداد المالية<br/>
-            <span className="text-saddad-gold">في {cityData.name}</span>
+            حلول مالية متكاملة في {cityData.name}<br/>
+            <span className="text-saddad-gold text-3xl md:text-4xl">تمويل شخصي، عقاري، وتحصيل ديون</span>
           </h1>
           <p className="text-lg text-slate-600 font-light max-w-3xl mb-10 leading-relaxed">
-            تقدم نجد السداد خدمات التمويل الشخصي والعقاري وسداد التعثرات وتحصيل الديون وتحسين سمة لعملائها في <strong className="font-bold text-slate-800">{cityData.name}</strong>، {cityData.desc}. نضمن لك أفضل الحلول المالية بأسرع وقت وأعلى احترافية.
+            إذا كنت تبحث عن <strong>{cityData.services[0]}</strong> أو <strong>{cityData.services[1]}</strong>، فإن شركة نجد السداد هي شريكك المالي الأفضل. نقدم في {cityData.name} خدمات <strong>{cityData.services[2]}</strong> و<strong>{cityData.services[3]}</strong> بأعلى مستويات الاحترافية.
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
             <a href="https://wa.me/966570856657" className="bg-saddad-gold text-slate-950 text-center px-8 py-4 rounded-xl font-bold hover:bg-saddad-gold-light transition-all flex items-center justify-center gap-2 shadow-lg">
@@ -95,33 +100,57 @@ export default async function CityPage({ params }: Props) {
       </section>
 
       <section className="py-16 max-w-5xl mx-auto px-4">
-        <h2 className="text-2xl font-bold text-slate-900 mb-10 text-right">خدماتنا في {cityData.name}</h2>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-          {[
-            { t: `تمويل شخصي ${cityData.name}`, href: "/tamweel-shakhsi", d: `قروض وتسهيلات شخصية للموظفين والمتقاعدين في ${cityData.name} بهامش ربح تنافسي وموافقة سريعة.` },
-            { t: `تمويل عقاري ${cityData.name}`, href: "/tamweel-aqari", d: `تمويل شراء الفلل والشقق والأراضي في ${cityData.name} بدون دفعة أولى بأقساط ميسرة.` },
-            { t: `سداد تعثرات ${cityData.name}`, href: "/sadad-tathorrat", d: `حلول متكاملة لتسوية الديون البنكية وإعادة جدولتها وتحسين سمة لعملاء ${cityData.name}.` },
-            { t: `تحصيل ديون ${cityData.name}`, href: "/tahseel-doyoon", d: `استرداد مستحقاتك التجارية المتعثرة في ${cityData.name} بأساليب قانونية واحترافية.` },
-            { t: `خدمات سمة ${cityData.name}`, href: "/khadamat-simah", d: `تحسين تقييم سمة وتصحيح السجل الائتماني ومتابعة التحديثات لعملاء ${cityData.name}.` },
-            { t: "استشارة مالية مجانية", href: "/contact", d: `تواصل مع خبرائنا الماليين للحصول على استشارة مخصصة تتناسب مع احتياجاتك في ${cityData.name}.` },
-          ].map((s, i) => (
-            <Link key={i} href={s.href} className="bg-slate-50 rounded-2xl p-6 border border-slate-100 hover:border-saddad-gold hover:shadow-lg transition-all group text-right block">
-              <CheckCircle2 size={20} className="text-saddad-gold mb-3" />
-              <h3 className="font-bold text-slate-900 mb-2 group-hover:text-saddad-blue transition-colors">{s.t}</h3>
-              <p className="text-slate-500 font-light text-sm leading-relaxed">{s.d}</p>
-            </Link>
-          ))}
+        <h2 className="text-2xl font-bold text-slate-900 mb-10 text-right">أبرز خدماتنا في {cityData.name}</h2>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          
+          <div className="bg-slate-50 rounded-2xl p-8 border border-slate-100">
+            <h3 className="text-xl font-bold text-slate-900 mb-4 text-right border-b border-slate-200 pb-3">{cityData.services[0]}</h3>
+            <ul className="space-y-3 text-right">
+              <li className="flex items-start gap-2 text-slate-600"><CheckSquare size={18} className="text-saddad-gold shrink-0 mt-1" /> تمويل شخصي بدون كفيل للموظفين</li>
+              <li className="flex items-start gap-2 text-slate-600"><CheckSquare size={18} className="text-saddad-gold shrink-0 mt-1" /> سرعة في الموافقة وإنجاز المعاملة في {cityData.name}</li>
+              <li className="flex items-start gap-2 text-slate-600"><CheckSquare size={18} className="text-saddad-gold shrink-0 mt-1" /> هوامش ربح تنافسية وخيارات سداد مرنة</li>
+            </ul>
+          </div>
+
+          <div className="bg-slate-50 rounded-2xl p-8 border border-slate-100">
+            <h3 className="text-xl font-bold text-slate-900 mb-4 text-right border-b border-slate-200 pb-3">{cityData.services[1]}</h3>
+            <ul className="space-y-3 text-right">
+              <li className="flex items-start gap-2 text-slate-600"><CheckSquare size={18} className="text-saddad-gold shrink-0 mt-1" /> تمويل شراء منازل وعقارات في {cityData.name}</li>
+              <li className="flex items-start gap-2 text-slate-600"><CheckSquare size={18} className="text-saddad-gold shrink-0 mt-1" /> حلول التمويل العقاري بدون دفعة أولى</li>
+              <li className="flex items-start gap-2 text-slate-600"><CheckSquare size={18} className="text-saddad-gold shrink-0 mt-1" /> توحيد الالتزامات مع القرض العقاري</li>
+            </ul>
+          </div>
+
+          <div className="bg-slate-50 rounded-2xl p-8 border border-slate-100">
+            <h3 className="text-xl font-bold text-slate-900 mb-4 text-right border-b border-slate-200 pb-3">{cityData.services[2]}</h3>
+            <ul className="space-y-3 text-right">
+              <li className="flex items-start gap-2 text-slate-600"><CheckSquare size={18} className="text-saddad-gold shrink-0 mt-1" /> تسوية المديونيات المتأخرة والتعثرات البنكية</li>
+              <li className="flex items-start gap-2 text-slate-600"><CheckSquare size={18} className="text-saddad-gold shrink-0 mt-1" /> تحديث بيانات سمة ورفع التقييم الائتماني</li>
+              <li className="flex items-start gap-2 text-slate-600"><CheckSquare size={18} className="text-saddad-gold shrink-0 mt-1" /> إعادة جدولة القروض بقسط ميسر</li>
+            </ul>
+          </div>
+
+          <div className="bg-slate-50 rounded-2xl p-8 border border-slate-100">
+            <h3 className="text-xl font-bold text-slate-900 mb-4 text-right border-b border-slate-200 pb-3">{cityData.services[3]}</h3>
+            <ul className="space-y-3 text-right">
+              <li className="flex items-start gap-2 text-slate-600"><CheckSquare size={18} className="text-saddad-gold shrink-0 mt-1" /> استرداد مستحقات الشركات والمؤسسات في {cityData.name}</li>
+              <li className="flex items-start gap-2 text-slate-600"><CheckSquare size={18} className="text-saddad-gold shrink-0 mt-1" /> أساليب قانونية لحماية التدفقات النقدية</li>
+              <li className="flex items-start gap-2 text-slate-600"><CheckSquare size={18} className="text-saddad-gold shrink-0 mt-1" /> وساطة مالية وتسويات تجارية فعالة</li>
+            </ul>
+          </div>
+
         </div>
       </section>
 
       <section className="py-20 max-w-4xl mx-auto px-4 text-right space-y-6 text-slate-700 font-light leading-loose">
-        <h2 className="text-2xl font-bold text-slate-900">نجد السداد في {cityData.name}: شريكك المالي الموثوق</h2>
-        <p>تُوفّر شركة نجد السداد للحلول المالية والتطوير العقاري خدماتها المالية الاحترافية لعملائها في {cityData.name} عن بُعد وباتصال مباشر. فريقنا من الخبراء الماليين يمتلك خبرة واسعة في سوق التمويل السعودي ويستطيع تقديم أفضل الحلول لجميع احتياجاتك المالية سواءً كنت تبحث عن تمويل شخصي أو عقاري أو سداد تعثرات أو تحصيل ديون أو تحسين سجلك في سمة.</p>
+        <h2 className="text-2xl font-bold text-slate-900">لماذا تختار نجد السداد في {cityData.name}؟</h2>
+        <p>نحن نعلم أن البحث عن <strong>{cityData.services[0]}</strong> أو <strong>{cityData.services[1]}</strong> يتطلب الثقة والخبرة. كشركة رائدة في مجال الحلول المالية والمصرفية المعتمدة، نضمن لعملائنا في <strong>{cityData.name}</strong> الحصول على أفضل الخدمات والعروض المتاحة بالسوق.</p>
+        <p>لا تقتصر خدماتنا على التمويل فقط، بل تمتد لتشمل إدارة المخاطر وتصحيح المسار المالي للشركات والأفراد عبر خدمات <strong>{cityData.services[2]}</strong> و<strong>{cityData.services[4]}</strong> لضمان استقرار مالي طويل الأمد.</p>
       </section>
 
       <section className="py-16 bg-slate-50 border-y border-slate-100">
         <div className="max-w-4xl mx-auto px-4 text-right">
-          <h2 className="text-2xl font-bold text-slate-900 mb-10">أسئلة شائعة عن خدماتنا في {cityData.name}</h2>
+          <h2 className="text-2xl font-bold text-slate-900 mb-10">الأسئلة الشائعة في {cityData.name}</h2>
           <div className="space-y-4">
             {faqs.map((faq, i) => (
               <details key={i} className="bg-white rounded-2xl p-6 border border-slate-100 shadow-sm group">
@@ -136,15 +165,35 @@ export default async function CityPage({ params }: Props) {
         </div>
       </section>
 
-      <section className="py-20 bg-slate-900 text-white text-center relative overflow-hidden">
-        <div className="relative z-10 max-w-3xl mx-auto px-4">
-          <h2 className="text-3xl font-bold mb-4">تواصل معنا من {cityData.name} الآن</h2>
-          <p className="text-slate-300 font-light mb-8">فريق نجد السداد جاهز لخدمتك من {cityData.name}. احصل على استشارة مجانية وأفضل حلول مالية تناسب احتياجاتك.</p>
-          <a href="https://wa.me/966570856657" className="bg-saddad-gold text-slate-950 px-10 py-4 rounded-xl font-bold hover:bg-saddad-gold-light transition-all inline-flex items-center gap-2">
-            <PhoneCall size={20} /> ابدأ الآن عبر واتساب
-          </a>
-        </div>
-      </section>
+      {/* JSON-LD Schemas */}
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": faqs.map(f => ({
+          "@type": "Question",
+          "name": f.q,
+          "acceptedAnswer": { "@type": "Answer", "text": f.a }
+        }))
+      })}} />
+
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "name": `الخدمات المالية في ${cityData.name}`,
+        "provider": {
+          "@type": "LocalBusiness",
+          "name": "نجد السداد للحلول المالية والتطوير العقاري",
+          "areaServed": { "@type": "City", "name": cityData.name }
+        },
+        "hasOfferCatalog": {
+          "@type": "OfferCatalog",
+          "name": `عروض تمويل ${cityData.name}`,
+          "itemListElement": cityData.services.map(s => ({
+            "@type": "Offer",
+            "itemOffered": { "@type": "Service", "name": s }
+          }))
+        }
+      })}} />
     </div>
   );
 }

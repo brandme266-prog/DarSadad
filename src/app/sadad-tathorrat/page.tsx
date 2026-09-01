@@ -63,11 +63,11 @@ export default function SadadTathorratPage() {
         </div>
       </section>
 
-      <section className="py-20 max-w-4xl mx-auto px-4 text-right space-y-6 text-slate-700 font-light leading-loose">
+      <section className="py-20 max-w-4xl mx-auto px-4 text-right space-y-8 text-slate-700 font-light leading-loose">
         <h2 className="text-2xl font-bold text-slate-900">سداد التعثرات البنكية في الرياض: كل ما تحتاج معرفته</h2>
-        <p>التعثر المالي حالة يمكن الخروج منها بالتخطيط السليم والمساعدة المتخصصة. في نجد السداد بالرياض، نؤمن بأن لكل أزمة مالية حلاً، وقد ساعدنا آلاف العملاء في الرياض على تجاوز تعثراتهم البنكية واستعادة مسيرتهم المالية.</p>
+        <p>التعثر المالي حالة يمكن الخروج منها بالتخطيط السليم والمساعدة المتخصصة. في نجد السداد بالرياض، نؤمن بأن لكل أزمة مالية حلاً، وقد ساعدنا آلاف العملاء في مسار <strong>حل تعثرات مالية الرياض</strong> على تجاوز الأزمات واستعادة مسيرتهم المالية بفضل أفضل الحلول في <strong>تسوية ديون الرياض</strong> وتخليصهم من عبء القروض المتراكمة.</p>
         <h3 className="text-xl font-bold text-slate-900">كيف نعالج تعثراتك البنكية في الرياض خطوة بخطوة</h3>
-        <p>تبدأ عملية سداد التعثرات في نجد السداد بدراسة شاملة لوضعك المالي وتحديد جميع الالتزامات المتعثرة، ثم نضع خطة تفاوضية مع الجهات الدائنة، ونتابع تنفيذها حتى الحصول على إخلاء الطرف الرسمي وتحديث سجل سمة.</p>
+        <p>تبدأ عملية <strong>سداد تعثرات الرياض</strong> في نجد السداد بدراسة شاملة لوضعك المالي وتحديد جميع الالتزامات المتعثرة، ثم نضع خطة تفاوضية مع الجهات الدائنة بهدف <strong>إعادة جدولة قروض الرياض</strong> وفق استطاعتك المادية، ونتابع تنفيذ الخطة حتى الحصول على إخلاء الطرف الرسمي واستكمال إجراءات <strong>تسوية سمة الرياض</strong> لتنظيف سجلك الائتماني بشكل كامل.</p>
       </section>
 
       <section className="py-16 bg-slate-50 border-y border-slate-100">
@@ -101,6 +101,37 @@ export default function SadadTathorratPage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
         "@context": "https://schema.org", "@type": "FAQPage",
         "mainEntity": faqs.map(f => ({ "@type": "Question", "name": f.q, "acceptedAnswer": { "@type": "Answer", "text": f.a } }))
+      })}} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "name": "سداد تعثرات الرياض",
+        "serviceType": "Debt Settlement",
+        "provider": {
+          "@type": "FinancialService",
+          "name": "نجد السداد للحلول المالية والتطوير العقاري",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "الرياض",
+            "addressRegion": "الرياض",
+            "addressCountry": "SA"
+          }
+        },
+        "areaServed": {
+          "@type": "City",
+          "name": "الرياض"
+        },
+        "description": "حلول مضمونة لسداد التعثرات البنكية، وتسوية الديون المتأخرة وإعادة جدولة القروض بالرياض وتحسين سجل سمة.",
+        "offers": {
+          "@type": "Offer",
+          "url": "https://najdsadad.com/sadad-tathorrat",
+          "priceCurrency": "SAR",
+          "price": "0",
+          "eligibleRegion": {
+            "@type": "Country",
+            "name": "SA"
+          }
+        }
       })}} />
     </div>
   );

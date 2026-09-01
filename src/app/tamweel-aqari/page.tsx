@@ -83,12 +83,14 @@ export default function TamweelAqariPage() {
 
       {/* SEO Content */}
       <section className="py-20 max-w-4xl mx-auto px-4 text-right space-y-8 text-slate-700 font-light leading-loose">
-        <h2 className="text-2xl font-bold text-slate-900">دليلك الشامل للحصول على التمويل العقاري في الرياض 2026</h2>
-        <p>يُعدّ تمويل شراء العقارات في مدينة الرياض من أكثر القرارات المالية أهمية في حياة أي فرد، لذا تحرص شركة نجد السداد على تقديم استشارات عقارية متخصصة تساعدك في اتخاذ القرار المناسب وانتقاء برنامج التمويل الأمثل سواء كنت تبحث عن فيلا أو شقة أو أرض سكنية في أحياء الرياض المختلفة.</p>
-        <h3 className="text-xl font-bold text-slate-900">مميزات التمويل العقاري للمواطنين السعوديين بالرياض</h3>
-        <p>يتمتع المواطنون السعوديون بالرياض بمزايا عديدة في الحصول على التمويل العقاري، في مقدمتها الدعم الحكومي من خلال صندوق التنمية العقارية، والذي يُتيح تمويل السكن بهامش ربح صفر أو مخفّض جداً لمستحقيه. ويعمل فريق نجد السداد على تسهيل الوصول إلى هذه المزايا وتسريع الإجراءات.</p>
-        <h3 className="text-xl font-bold text-slate-900">التمويل العقاري للمقيمين والأجانب بالرياض</h3>
-        <p>يمكن للمقيمين الحاملين لإقامة نظامية في الرياض الحصول على تمويل عقاري بشروط خاصة عبر بعض البنوك المرخصة، ويقوم فريقنا بمرافقتهم في هذه الإجراءات المعقدة لضمان حصولهم على أفضل العروض المتاحة.</p>
+        <h2 className="text-2xl font-bold text-slate-900">دليلك الشامل للحصول على تمويل عقاري الرياض 2026</h2>
+        <p>يُعدّ الحصول على <strong>تمويل شراء منزل الرياض</strong> من أكثر القرارات المالية أهمية في حياة أي فرد، لذا تحرص شركة نجد السداد على تقديم استشارات عقارية متخصصة تساعدك في اتخاذ القرار المناسب وانتقاء برنامج <strong>تمويل إسكاني الرياض</strong> الأمثل سواء كنت تبحث عن تمويل <strong>فلل سكنية</strong> أو <strong>شقق</strong> أو أراضٍ سكنية في أحياء الرياض المختلفة.</p>
+        
+        <h3 className="text-xl font-bold text-slate-900">مميزات التمويل العقاري للأفراد بالرياض</h3>
+        <p>يتمتع المواطنون السعوديون بالرياض بمزايا عديدة في الحصول على <strong>تمويل عقاري للأفراد</strong>، في مقدمتها الدعم الحكومي من خلال صندوق التنمية العقارية، والذي يُتيح تمويل السكن بهامش ربح صفر أو مخفّض جداً لمستحقيه. نسهل لك الحصول على <strong>قرض عقاري بدون دفعة أولى</strong> عبر إنهاء كافة المتطلبات البنكية بوقت قياسي.</p>
+        
+        <h3 className="text-xl font-bold text-slate-900">تمويل عقاري للفلل والشقق بالرياض</h3>
+        <p>إذا كنت ترغب في <strong>تمويل عقاري للفلل الرياض</strong> أو <strong>تمويل عقاري للشقق الرياض</strong>، يمكن للمقيمين والمواطنين الحصول على التمويل بشروط ميسرة عبر البنوك المرخصة التي نتعامل معها، ويقوم فريقنا بمرافقتهم في هذه الإجراءات لضمان حصولهم على أفضل العروض المتاحة بالسوق العقاري.</p>
       </section>
 
       {/* FAQ */}
@@ -121,9 +123,41 @@ export default function TamweelAqariPage() {
         </div>
       </section>
 
+      {/* JSON-LD Schemas */}
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
         "@context": "https://schema.org", "@type": "FAQPage",
         "mainEntity": faqs.map(f => ({ "@type": "Question", "name": f.q, "acceptedAnswer": { "@type": "Answer", "text": f.a } }))
+      })}} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "name": "تمويل عقاري الرياض",
+        "serviceType": "Mortgage Loan",
+        "provider": {
+          "@type": "FinancialService",
+          "name": "نجد السداد للحلول المالية والتطوير العقاري",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "الرياض",
+            "addressRegion": "الرياض",
+            "addressCountry": "SA"
+          }
+        },
+        "areaServed": {
+          "@type": "City",
+          "name": "الرياض"
+        },
+        "description": "تمويل عقاري بدون دفعة أولى للفلل والشقق والأراضي في الرياض.",
+        "offers": {
+          "@type": "Offer",
+          "url": "https://najdsadad.com/tamweel-aqari",
+          "priceCurrency": "SAR",
+          "price": "0",
+          "eligibleRegion": {
+            "@type": "Country",
+            "name": "SA"
+          }
+        }
       })}} />
     </div>
   );
