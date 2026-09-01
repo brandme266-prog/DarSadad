@@ -1,4 +1,4 @@
-﻿"use client";
+"use client";
 
 import Link from "next/link";
 import Image from "next/image";
@@ -66,10 +66,7 @@ export default function Footer() {
                 <a href="tel:+966570856657" dir="ltr" className="hover:text-white transition-colors font-medium" aria-label="اتصل بنا هاتفياً">+966570856657</a>
               </div>
 
-              <div className="flex items-center gap-3">
-                <Mail size={18} strokeWidth={1.5} className="text-saddad-gold shrink-0" />
-                <a href="mailto:info@brand1me.com" className="hover:text-white transition-colors">info@brand1me.com</a>
-              </div>
+
             </div>
           </div>
 

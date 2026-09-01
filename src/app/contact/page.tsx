@@ -1,4 +1,4 @@
-﻿"use client";
+"use client";
 
 import { motion } from "framer-motion";
 import { MapPin, Phone, Mail, Send } from "lucide-react";
@@ -54,15 +54,7 @@ export default function ContactPage() {
                 </div>
               </div>
 
-              <div className="flex items-start gap-4">
-                <div className="w-10 h-10 rounded-lg bg-white border border-slate-100 flex items-center justify-center text-saddad-blue shrink-0">
-                  <Mail size={20} strokeWidth={1.5} />
-                </div>
-                <div>
-                  <h3 className="font-bold text-sm mb-1 text-slate-900">البريد الإلكتروني</h3>
-                  <p className="text-slate-500 text-sm font-light">info@brand1me.com</p>
-                </div>
-              </div>
+
             </div>
 
             <div className="mt-12 pt-8 border-t border-slate-200">
