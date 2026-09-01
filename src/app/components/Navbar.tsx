@@ -1,4 +1,4 @@
-﻿"use client";
+"use client";
 
 import Link from "next/link";
 import Image from "next/image";
@@ -22,6 +22,7 @@ export default function Navbar() {
 
   const navLinks = [
     { name: "الرئيسية", path: "/" },
+    { name: "من نحن", path: "/about" },
     { name: "خدماتنا", path: "/services" },
     { name: "المقالات", path: "/blog" },
     { name: "اتصل بنا", path: "/contact" },

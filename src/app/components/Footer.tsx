@@ -1,4 +1,4 @@
-﻿"use client";
+"use client";
 
 import Link from "next/link";
 import Image from "next/image";
@@ -35,6 +35,7 @@ export default function Footer() {
             <h3 className="text-sm font-bold text-white mb-6 border-r-2 border-saddad-gold pr-3">روابط سريعة</h3>
             <ul className="space-y-3.5 text-sm font-light text-slate-400">
               <li><Link href="/" className="hover:text-saddad-gold transition-colors">الرئيسية</Link></li>
+              <li><Link href="/about" className="hover:text-saddad-gold transition-colors">من نحن</Link></li>
               <li><Link href="/services" className="hover:text-saddad-gold transition-colors">خدماتنا التمويلية</Link></li>
               <li><Link href="/blog" className="hover:text-saddad-gold transition-colors">المقالات والدليل المالي</Link></li>
               <li><Link href="/contact" className="hover:text-saddad-gold transition-colors">تواصل معنا</Link></li>
