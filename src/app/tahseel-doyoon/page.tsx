@@ -33,7 +33,7 @@ export default function TahseelDoyoonPage() {
             هل تعاني شركتك من ديون متعثرة ومستحقات غير محصّلة؟ فريق نجد السداد المتخصص في تحصيل الديون بالرياض يضمن استرداد أموالك بأساليب قانونية ومهنية تحافظ على علاقاتك التجارية وسمعتك في السوق.
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
-            <a href="https://wa.me/966570856657" className="bg-saddad-gold text-slate-950 text-center px-8 py-4 rounded-xl font-bold hover:bg-saddad-gold-light transition-all flex items-center justify-center gap-2 shadow-lg">
+            <a href="https://wa.me/00966570856657" className="bg-saddad-gold text-slate-950 text-center px-8 py-4 rounded-xl font-bold hover:bg-saddad-gold-light transition-all flex items-center justify-center gap-2 shadow-lg">
               <PhoneCall size={20} /> استردّ أموالك الآن
             </a>
             <Link href="/contact" className="bg-white text-slate-800 border-2 border-slate-200 text-center px-8 py-4 rounded-xl font-bold hover:border-saddad-gold transition-all flex items-center justify-center gap-2">
@@ -55,11 +55,11 @@ export default function TahseelDoyoonPage() {
         </div>
       </section>
 
-      <section className="py-20 max-w-4xl mx-auto px-4 text-right space-y-6 text-slate-700 font-light leading-loose">
-        <h2 className="text-2xl font-bold text-slate-900">خدمات تحصيل الديون التجارية في الرياض</h2>
-        <p>تُعدّ الديون التجارية المتعثرة من أكبر التهديدات التي تواجه تدفق السيولة النقدية في الشركات الصغيرة والمتوسطة بالرياض. تتولى نجد السداد كمكتب تحصيل ديون معتمد إدارة ملفات التحصيل بشكل كامل بدءاً من التواصل الأولي مع المدين ومروراً بالمفاوضات وصولاً للتحصيل الفعلي للمبالغ المستحقة.</p>
+      <section className="py-20 max-w-4xl mx-auto px-4 text-right space-y-8 text-slate-700 font-light leading-loose">
+        <h2 className="text-2xl font-bold text-slate-900">أفضل شركة تحصيل ديون الرياض</h2>
+        <p>تُعدّ الديون التجارية المتعثرة من أكبر التهديدات التي تواجه تدفق السيولة النقدية في الشركات والمؤسسات. تتولى نجد السداد كأفضل <strong>شركة تحصيل ديون الرياض</strong> إدارة ملفات التحصيل بشكل كامل. باعتبارنا <strong>مكتب تحصيل ديون الرياض</strong> معتمد، نقوم ببدء التواصل الأولي مع المدين ومروراً بالمفاوضات وصولاً للتحصيل الفعلي لضمان <strong>استرداد ديون الشركات</strong> بالكامل.</p>
         <h3 className="text-xl font-bold text-slate-900">تحصيل الديون القانونية باحترافية</h3>
-        <p>يضم فريقنا مستشارين قانونيين وماليين متخصصين في قانون التجارة السعودي، مما يتيح لنا اتخاذ الإجراءات القانونية اللازمة عند الضرورة مع الحرص دائماً على التسوية الودية حفاظاً على علاقاتك التجارية.</p>
+        <p>يضم فريقنا مستشارين قانونيين وماليين متخصصين في قانون التجارة السعودي لضمان <strong>تحصيل مستحقات الرياض</strong> بأعلى كفاءة. نوفر خدمة <strong>تحصيل ديون للشركات</strong> مما يتيح لنا اتخاذ الإجراءات القانونية اللازمة عند الضرورة مع الحرص دائماً على التسوية الودية لنجاح <strong>تحصيل ديون تجارية</strong> مع الحفاظ على علاقاتك المهنية.</p>
       </section>
 
       <section className="py-16 bg-slate-50 border-y border-slate-100">
@@ -83,7 +83,7 @@ export default function TahseelDoyoonPage() {
         <div className="relative z-10 max-w-3xl mx-auto px-4">
           <h2 className="text-3xl font-bold mb-4">لا تدع أموالك تضيع — استردّها الآن</h2>
           <p className="text-slate-300 font-light mb-8">تواصل مع خبراء تحصيل الديون في نجد السداد وابدأ مسيرة استرداد مستحقاتك التجارية بالرياض اليوم.</p>
-          <a href="https://wa.me/966570856657" className="bg-saddad-gold text-slate-950 px-10 py-4 rounded-xl font-bold hover:bg-saddad-gold-light transition-all inline-flex items-center gap-2">
+          <a href="https://wa.me/00966570856657" className="bg-saddad-gold text-slate-950 px-10 py-4 rounded-xl font-bold hover:bg-saddad-gold-light transition-all inline-flex items-center gap-2">
             <PhoneCall size={20} /> ابدأ التحصيل الآن
           </a>
         </div>
@@ -92,6 +92,37 @@ export default function TahseelDoyoonPage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
         "@context": "https://schema.org", "@type": "FAQPage",
         "mainEntity": faqs.map(f => ({ "@type": "Question", "name": f.q, "acceptedAnswer": { "@type": "Answer", "text": f.a } }))
+      })}} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "name": "تحصيل ديون الشركات الرياض",
+        "serviceType": "Debt Collection",
+        "provider": {
+          "@type": "FinancialService",
+          "name": "نجد السداد للحلول المالية والتطوير العقاري",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "الرياض",
+            "addressRegion": "الرياض",
+            "addressCountry": "SA"
+          }
+        },
+        "areaServed": {
+          "@type": "City",
+          "name": "الرياض"
+        },
+        "description": "خدمات تحصيل ديون الشركات والمؤسسات واسترداد المستحقات المالية والتجارية باحترافية في الرياض.",
+        "offers": {
+          "@type": "Offer",
+          "url": "https://najdsadad.com/tahseel-doyoon",
+          "priceCurrency": "SAR",
+          "price": "0",
+          "eligibleRegion": {
+            "@type": "Country",
+            "name": "SA"
+          }
+        }
       })}} />
     </div>
   );

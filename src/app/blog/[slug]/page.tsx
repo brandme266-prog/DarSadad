@@ -486,7 +486,7 @@ export default async function ArticleDetailPage({ params }: Props) {
             <p className="text-slate-300 text-sm font-light max-w-md mx-auto leading-relaxed">
               مستشارونا الماليون في نجد السداد متاحون الآن للرد على كافة استفساراتك وتقديم دراسة شاملة ومجانية لحالتك.
             </p>
-            <a href="https://wa.me/966570856657" className="bg-saddad-gold text-slate-950 px-8 py-4 rounded-xl font-bold text-sm hover:bg-saddad-gold-light transition-all inline-flex items-center gap-2 shadow-lg">
+            <a href="https://wa.me/00966570856657" className="bg-saddad-gold text-slate-950 px-8 py-4 rounded-xl font-bold text-sm hover:bg-saddad-gold-light transition-all inline-flex items-center gap-2 shadow-lg">
               <PhoneCall size={18} />
               <span>تواصل معنا عبر واتساب الآن</span>
             </a>

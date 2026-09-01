@@ -33,7 +33,7 @@ export default function KhadamatSimahPage() {
             سجلك الائتماني في سمة هو مفتاحك للتمويل المستقبلي. نجد السداد تقدم خدمات متكاملة لتحسين تقييمك في سمة وتصحيح البيانات وسداد التعثرات وإزالتها من سجلك لتعود مؤهلاً للحصول على التمويل الذي تحتاجه.
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
-            <a href="https://wa.me/966570856657" className="bg-saddad-gold text-slate-950 text-center px-8 py-4 rounded-xl font-bold hover:bg-saddad-gold-light transition-all flex items-center justify-center gap-2 shadow-lg">
+            <a href="https://wa.me/00966570856657" className="bg-saddad-gold text-slate-950 text-center px-8 py-4 rounded-xl font-bold hover:bg-saddad-gold-light transition-all flex items-center justify-center gap-2 shadow-lg">
               <PhoneCall size={20} /> حسّن سمتك الآن
             </a>
             <Link href="/contact" className="bg-white text-slate-800 border-2 border-slate-200 text-center px-8 py-4 rounded-xl font-bold hover:border-saddad-gold transition-all flex items-center justify-center gap-2">
@@ -63,11 +63,11 @@ export default function KhadamatSimahPage() {
         </div>
       </section>
 
-      <section className="py-20 max-w-4xl mx-auto px-4 text-right space-y-6 text-slate-700 font-light leading-loose">
+      <section className="py-20 max-w-4xl mx-auto px-4 text-right space-y-8 text-slate-700 font-light leading-loose">
         <h2 className="text-2xl font-bold text-slate-900">دليل تحسين السجل الائتماني في سمة بالرياض</h2>
-        <p>منصة سمة (شركة المعلومات الائتمانية) هي المرجع الأساسي الذي تعتمد عليه البنوك وجميع جهات التمويل في المملكة العربية السعودية لتقييم الجدارة الائتمانية لكل فرد أو شركة. تقييمك في سمة يحدد مدى قدرتك على الحصول على القروض والتمويلات المختلفة.</p>
-        <h3 className="text-xl font-bold text-slate-900">لماذا تنخفض تقييمات سمة؟</h3>
-        <p>تنخفض درجات التقييم الائتماني في سمة نتيجة لعدة عوامل، أبرزها: التأخر في سداد الأقساط، التعثر في سداد القروض، كثرة طلبات التمويل المرفوضة، أو وجود بيانات مغلوطة. يعمل فريق نجد السداد على معالجة هذه الأسباب واحدةً تلو الأخرى.</p>
+        <p>منصة سمة (شركة المعلومات الائتمانية) هي المرجع الأساسي الذي تعتمد عليه البنوك وجميع جهات التمويل في المملكة العربية السعودية لتقييم الجدارة الائتمانية لكل فرد أو شركة. في نجد السداد، نقدم أفضل <strong>خدمات سمة الرياض</strong> حيث يساعدك تقييمك العالي في الحصول على القروض بسهولة. إذا كان تقييمك منخفضاً، فإننا نقدم حلول <strong>تحسين سمة الرياض</strong> المتكاملة لإنقاذ موقفك المالي.</p>
+        <h3 className="text-xl font-bold text-slate-900">لماذا تنخفض تقييمات سمة وكيف نرفعها؟</h3>
+        <p>تنخفض درجات التقييم الائتماني نتيجة تأخر الأقساط أو التعثر. يعمل فريقنا على <strong>تسوية سمة الرياض</strong> عبر التفاوض مع البنوك، ونقوم بـ <strong>سداد سمة الرياض</strong> لإغلاق المديونيات. بعد ذلك، نبدأ فوراً في <strong>تصحيح سجل ائتماني الرياض</strong> من أي أخطاء ونجري <strong>استعلام سمة الرياض</strong> دورياً لمراقبة <strong>رفع تقييم سمة</strong> تدريجياً لتعود مؤهلاً للتمويل.</p>
       </section>
 
       <section className="py-16 bg-slate-50 border-y border-slate-100">
@@ -91,7 +91,7 @@ export default function KhadamatSimahPage() {
         <div className="relative z-10 max-w-3xl mx-auto px-4">
           <h2 className="text-3xl font-bold mb-4">اعرف وضعك في سمة وحسّنه اليوم</h2>
           <p className="text-slate-300 font-light mb-8">تواصل مع نجد السداد للحصول على تقرير سمة وتحليله وخطة لتحسين تقييمك الائتماني بالرياض.</p>
-          <a href="https://wa.me/966570856657" className="bg-saddad-gold text-slate-950 px-10 py-4 rounded-xl font-bold hover:bg-saddad-gold-light transition-all inline-flex items-center gap-2">
+          <a href="https://wa.me/00966570856657" className="bg-saddad-gold text-slate-950 px-10 py-4 rounded-xl font-bold hover:bg-saddad-gold-light transition-all inline-flex items-center gap-2">
             <PhoneCall size={20} /> استعلم عن سمتك الآن
           </a>
         </div>
@@ -100,6 +100,37 @@ export default function KhadamatSimahPage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
         "@context": "https://schema.org", "@type": "FAQPage",
         "mainEntity": faqs.map(f => ({ "@type": "Question", "name": f.q, "acceptedAnswer": { "@type": "Answer", "text": f.a } }))
+      })}} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "name": "خدمات تحسين سمة الرياض",
+        "serviceType": "Credit Repair",
+        "provider": {
+          "@type": "FinancialService",
+          "name": "نجد السداد للحلول المالية والتطوير العقاري",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "الرياض",
+            "addressRegion": "الرياض",
+            "addressCountry": "SA"
+          }
+        },
+        "areaServed": {
+          "@type": "City",
+          "name": "الرياض"
+        },
+        "description": "خدمات متكاملة لتحسين السجل الائتماني، رفع تقييم سمة، الاستعلام عن سمة، ותصحيح البيانات الخاطئة في الرياض.",
+        "offers": {
+          "@type": "Offer",
+          "url": "https://najdsadad.com/khadamat-simah",
+          "priceCurrency": "SAR",
+          "price": "0",
+          "eligibleRegion": {
+            "@type": "Country",
+            "name": "SA"
+          }
+        }
       })}} />
     </div>
   );

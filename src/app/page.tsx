@@ -59,7 +59,7 @@ export default function Home() {
                   <span className="text-base">اطلب استشارتك الآن</span>
                   <ArrowLeft size={18} strokeWidth={2.5} className="group-hover:-translate-x-1 transition-transform" />
                 </Link>
-                <a href="https://wa.me/966570856657" className="bg-white text-slate-700 border-2 border-slate-200 text-center px-8 py-4 rounded-xl font-bold hover:border-saddad-gold hover:text-saddad-gold transition-all flex items-center justify-center">
+                <a href="https://wa.me/00966570856657" className="bg-white text-slate-700 border-2 border-slate-200 text-center px-8 py-4 rounded-xl font-bold hover:border-saddad-gold hover:text-saddad-gold transition-all flex items-center justify-center">
                   تواصل عبر واتساب
                 </a>
               </motion.div>
@@ -267,7 +267,7 @@ export default function Home() {
                   </p>
                 </div>
                 <a 
-                  href="https://wa.me/966570856657" 
+                  href="https://wa.me/00966570856657" 
                   className="shrink-0 bg-saddad-gold text-slate-950 px-8 py-4 rounded-xl text-sm font-bold hover:bg-saddad-gold-light transition-colors shadow-lg"
                 >
                   تواصل معنا الآن

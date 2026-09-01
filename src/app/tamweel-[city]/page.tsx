@@ -89,7 +89,7 @@ export default async function CityPage({ params }: Props) {
             إذا كنت تبحث عن <strong>{cityData.services[0]}</strong> أو <strong>{cityData.services[1]}</strong>، فإن شركة نجد السداد هي شريكك المالي الأفضل. نقدم في {cityData.name} خدمات <strong>{cityData.services[2]}</strong> و<strong>{cityData.services[3]}</strong> بأعلى مستويات الاحترافية.
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
-            <a href="https://wa.me/966570856657" className="bg-saddad-gold text-slate-950 text-center px-8 py-4 rounded-xl font-bold hover:bg-saddad-gold-light transition-all flex items-center justify-center gap-2 shadow-lg">
+            <a href="https://wa.me/00966570856657" className="bg-saddad-gold text-slate-950 text-center px-8 py-4 rounded-xl font-bold hover:bg-saddad-gold-light transition-all flex items-center justify-center gap-2 shadow-lg">
               <PhoneCall size={20} /> تواصل معنا من {cityData.name}
             </a>
             <Link href="/contact" className="bg-white text-slate-800 border-2 border-slate-200 text-center px-8 py-4 rounded-xl font-bold hover:border-saddad-gold transition-all flex items-center justify-center gap-2">

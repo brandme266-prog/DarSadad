@@ -69,7 +69,7 @@ const organizationSchema = {
   logo: { "@type": "ImageObject", url: `${siteUrl}/images/logo.png`, width: 200, height: 200 },
   image: `${siteUrl}/images/hero-banner.jpg`,
   description: "شركة نجد السداد للحلول المالية والتطوير العقاري بالرياض، متخصصون في التمويل الشخصي والعقاري وسداد التعثرات وتحصيل الديون وخدمات تحسين السجل الائتماني في سمة.",
-  telephone: "+966570856657",
+  telephone: "00966570856657",
   email: "info@najdsadad.com",
   address: {
     "@type": "PostalAddress",
@@ -102,14 +102,14 @@ const organizationSchema = {
   ],
   contactPoint: {
     "@type": "ContactPoint",
-    telephone: "+966570856657",
+    telephone: "00966570856657",
     contactType: "customer service",
     areaServed: "SA",
     availableLanguage: "Arabic",
     contactOption: "TollFree",
   },
   sameAs: [
-    "https://wa.me/966570856657",
+    "https://wa.me/00966570856657",
     `${siteUrl}`,
   ],
   identifier: [

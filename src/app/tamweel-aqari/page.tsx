@@ -37,7 +37,7 @@ export default function TamweelAqariPage() {
             امتلك عقارك في الرياض الآن مع نجد السداد. نقدم أفضل برامج التمويل العقاري والقرض العقاري للأفراد بدون دفعة أولى، بأقساط شهرية ميسرة وفترات سداد تمتد حتى 25 سنة، متوافق مع أحكام الشريعة الإسلامية.
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
-            <a href="https://wa.me/966570856657" className="bg-saddad-gold text-slate-950 text-center px-8 py-4 rounded-xl font-bold hover:bg-saddad-gold-light transition-all flex items-center justify-center gap-2 shadow-lg">
+            <a href="https://wa.me/00966570856657" className="bg-saddad-gold text-slate-950 text-center px-8 py-4 rounded-xl font-bold hover:bg-saddad-gold-light transition-all flex items-center justify-center gap-2 shadow-lg">
               <PhoneCall size={20} /> ابدأ رحلة تملكك الآن
             </a>
             <Link href="/contact" className="bg-white text-slate-800 border-2 border-slate-200 text-center px-8 py-4 rounded-xl font-bold hover:border-saddad-gold transition-all flex items-center justify-center gap-2">
@@ -117,7 +117,7 @@ export default function TamweelAqariPage() {
         <div className="relative z-10 max-w-3xl mx-auto px-4">
           <h2 className="text-3xl font-bold mb-4">ابدأ رحلة تملّك عقارك بالرياض اليوم</h2>
           <p className="text-slate-300 font-light mb-8">تواصل مع خبراء التمويل العقاري في نجد السداد للحصول على استشارة مجانية وأفضل عرض تمويل يناسب احتياجاتك.</p>
-          <a href="https://wa.me/966570856657" className="bg-saddad-gold text-slate-950 px-10 py-4 rounded-xl font-bold text-base hover:bg-saddad-gold-light transition-all inline-flex items-center gap-2">
+          <a href="https://wa.me/00966570856657" className="bg-saddad-gold text-slate-950 px-10 py-4 rounded-xl font-bold text-base hover:bg-saddad-gold-light transition-all inline-flex items-center gap-2">
             <PhoneCall size={20} /> احجز استشارتك المجانية
           </a>
         </div>
