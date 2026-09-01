@@ -45,6 +45,24 @@ export const articles = [
     date: "15 أغسطس 2026",
     readTime: "4 دقائق",
     image: "/images/hero-banner.jpg",
+  },
+  {
+    slug: "najd-sadad-best-financial-solutions-company",
+    title: "شركة نجد السداد: خيارك الأول للحلول المالية وسداد التعثرات بالرياض",
+    summary: "تعرف على خدمات شركة نجد السداد الرائدة في تقديم الاستشارات، تحصيل الديون، والتمويل المبتكر لكل من الأفراد والشركات بأعلى معايير الاحترافية.",
+    category: "خدمات الشركة",
+    date: "5 سبتمبر 2026",
+    readTime: "5 دقائق",
+    image: "/images/hero-banner.jpg",
+  },
+  {
+    slug: "comprehensive-guide-debt-collection-riyadh",
+    title: "الدليل الشامل لتحصيل الديون وحل المنازعات المالية في السعودية",
+    summary: "كيف تتجنب الديون المعدومة وتحافظ على حقوق شركتك؟ اكتشف استراتيجيات شركة نجد السداد المبتكرة لتحصيل الديون الودية والقانونية.",
+    category: "تحصيل ديون",
+    date: "8 سبتمبر 2026",
+    readTime: "6 دقائق",
+    image: "/images/business-debt.jpg",
   }
 ];
 
