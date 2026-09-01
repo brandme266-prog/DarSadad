@@ -16,7 +16,8 @@ export default function Footer() {
               <div className="bg-white rounded-2xl p-2 inline-flex items-center justify-center w-fit">
                 <Image 
                   src="/images/logo.png" 
-                  alt="نجد السداد" 
+                  alt="" 
+                  aria-hidden="true"
                   width={100} 
                   height={100} 
                   className="w-20 h-20 sm:w-24 sm:h-24 object-contain"
@@ -62,7 +63,7 @@ export default function Footer() {
 
               <div className="flex items-center gap-3">
                 <Phone size={18} strokeWidth={1.5} className="text-saddad-gold shrink-0" />
-                <a href="tel:00966570856657" dir="ltr" className="hover:text-white transition-colors font-medium">00966570856657</a>
+                <a href="tel:00966570856657" dir="ltr" className="hover:text-white transition-colors font-medium" aria-label="اتصل بنا هاتفياً">00966570856657</a>
               </div>
 
               <div className="flex items-center gap-3">

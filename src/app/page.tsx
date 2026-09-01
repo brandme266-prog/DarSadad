@@ -42,7 +42,7 @@ export default function Home() {
             >
               <motion.div variants={itemVariants} className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-saddad-gold/10 border border-saddad-gold/25 mb-6">
                 <span className="w-2 h-2 rounded-full bg-saddad-gold animate-pulse"></span>
-                <span className="text-xs font-bold text-saddad-gold">شريكك المالي المعتمد في الرياض</span>
+                <span className="text-xs font-bold text-amber-800">شريكك المالي المعتمد في الرياض</span>
               </motion.div>
               
               <motion.h1 variants={itemVariants} className="text-4xl md:text-5xl lg:text-6xl font-bold leading-[1.25] text-slate-900 mb-6 tracking-tight">
@@ -285,7 +285,7 @@ export default function Home() {
           <div className="text-center mb-14">
             <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-saddad-gold/10 border border-saddad-gold/20 mb-4">
               <ShieldCheck size={14} className="text-saddad-gold" />
-              <span className="text-xs font-bold text-saddad-gold">جهة مرخصة ومعتمدة رسمياً</span>
+              <span className="text-xs font-bold text-amber-800">جهة مرخصة ومعتمدة رسمياً</span>
             </div>
             <h2 className="text-3xl font-bold text-slate-900 mb-3">نحن معتمدون ومرخّصون</h2>
             <p className="text-slate-500 font-light max-w-xl mx-auto">نجد السداد مؤسسة مالية مسجلة ومرخصة من الجهات الحكومية السعودية المختصة، نعمل بشفافية ومهنية عالية.</p>
@@ -298,7 +298,7 @@ export default function Home() {
               <div className="w-12 h-12 bg-white rounded-xl flex items-center justify-center mb-5 shadow-sm">
                 <span className="text-2xl">🏛️</span>
               </div>
-              <p className="text-xs text-slate-400 mb-1 font-medium">وزارة التجارة</p>
+              <p className="text-xs text-slate-600 mb-1 font-medium">وزارة التجارة</p>
               <h3 className="text-lg font-bold text-slate-900 mb-2">السجل التجاري</h3>
               <p className="text-2xl font-bold text-saddad-blue dir-ltr text-left" dir="ltr">1010852488</p>
               <p className="text-xs text-green-600 font-bold mt-2 flex items-center gap-1">
@@ -348,9 +348,9 @@ export default function Home() {
             ].map((org, i) => (
               <div key={i} className="flex flex-col items-center gap-1 text-center">
                 <div className="w-10 h-10 bg-slate-200 rounded-full flex items-center justify-center">
-                  <Landmark size={18} className="text-slate-500" />
+                  <Landmark size={18} className="text-slate-700" />
                 </div>
-                <span className="text-[10px] text-slate-500 font-medium">{org.label}</span>
+                <span className="text-[10px] text-slate-700 font-medium">{org.label}</span>
               </div>
             ))}
           </div>

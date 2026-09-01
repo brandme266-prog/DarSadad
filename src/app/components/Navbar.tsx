@@ -40,7 +40,7 @@ export default function Navbar() {
           <div className="flex gap-5 items-center">
             <a href="mailto:info@brand1me.com" className="hover:text-white transition-colors">info@brand1me.com</a>
             <span className="text-slate-700">|</span>
-            <a href="https://wa.me/00966570856657" dir="ltr" className="font-bold text-white tracking-wide hover:text-saddad-gold transition-colors">00966570856657</a>
+            <a href="https://wa.me/00966570856657" dir="ltr" className="font-bold text-white tracking-wide hover:text-saddad-gold transition-colors" aria-label="تواصل معنا عبر واتساب">00966570856657</a>
           </div>
         </div>
       </div>
@@ -58,9 +58,10 @@ export default function Navbar() {
             <Link href="/" className="flex items-center gap-2 group">
               <Image 
                 src="/images/logo.png" 
-                alt="نجد السداد للحلول المالية" 
-                width={70} 
-                height={70} 
+                alt="" 
+                aria-hidden="true"
+                width={100} 
+                height={100} 
                 className="w-16 h-16 sm:w-20 sm:h-20 object-contain transition-transform group-hover:scale-105"
                 priority
               />
