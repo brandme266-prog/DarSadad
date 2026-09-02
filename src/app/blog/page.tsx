@@ -17,7 +17,7 @@ export const articles = [
     category: "تمويل عقاري",
     date: "1 سبتمبر 2026",
     readTime: "4 دقائق",
-    image: "/images/real-estate.jpg",
+    image: "/images/تمويل-عقاري-بدون-دفعة-اولى-الرياض.jpg",
   },
   {
     slug: "سداد-تعثرات-سمة-وتسوية-القروض",
@@ -26,7 +26,7 @@ export const articles = [
     category: "سداد تعثرات",
     date: "28 أغسطس 2026",
     readTime: "5 دقائق",
-    image: "/images/personal-finance.jpg",
+    image: "/images/سداد-تعثرات-سمة-وتسوية-القروض.jpg",
   },
   {
     slug: "حلول-تحصيل-ديون-الشركات-السعودية",
@@ -35,7 +35,7 @@ export const articles = [
     category: "تحصيل ديون",
     date: "22 أغسطس 2026",
     readTime: "6 دقائق",
-    image: "/images/business-debt.jpg",
+    image: "/images/حلول-تحصيل-ديون-الشركات-السعودية.jpg",
   },
   {
     slug: "افضل-خيارات-التمويل-الشخصي-الرياض",
