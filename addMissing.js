@@ -66,7 +66,7 @@ const missingArticles = {
   }
 };
 
-const fs = require('fs');
+
 let content = fs.readFileSync('src/data/articlesContent.ts', 'utf8');
 const closingBraceIndex = content.lastIndexOf('};');
 if (closingBraceIndex !== -1) {
