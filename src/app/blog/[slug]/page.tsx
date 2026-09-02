@@ -12,9 +12,10 @@ interface Props {
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params;
-  const article = articles.find(a => a.slug === slug);
+  const decodedSlug = decodeURIComponent(slug);
+  const article = articles.find(a => a.slug === decodedSlug);
   if (!article) return { title: "المقال غير موجود" };
-  const content = articleContents[slug];
+  const content = articleContents[decodedSlug];
   return {
     title: `${article.title} | نجد السداد للحلول المالية`,
     description: article.summary,
@@ -94,11 +95,12 @@ function ContentSection({ section }: { section: typeof articleContents[string]["
 
 export default async function ArticleDetailPage({ params }: Props) {
   const { slug } = await params;
-  const article = articles.find(a => a.slug === slug);
+  const decodedSlug = decodeURIComponent(slug);
+  const article = articles.find(a => a.slug === decodedSlug);
   if (!article) notFound();
 
-  const content = articleContents[slug];
-  const relatedArticles = articles.filter(a => a.slug !== slug).slice(0, 3);
+  const content = articleContents[decodedSlug];
+  const relatedArticles = articles.filter(a => a.slug !== decodedSlug).slice(0, 3);
 
   return (
     <article className="bg-white min-h-screen pt-32 pb-24">
