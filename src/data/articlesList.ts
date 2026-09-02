@@ -63,7 +63,7 @@ export const articles = [
     category: "التمويل الشخصي",
     date: "2 سبتمبر 2026",
     readTime: "5 دقائق",
-    image: "/images/personal-finance.jpg",
+    image: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=800&q=80",
   },
   {
     slug: "تمويل-شخصي-بدون-كفيل-الرياض",
@@ -72,7 +72,7 @@ export const articles = [
     category: "التمويل الشخصي",
     date: "2 سبتمبر 2026",
     readTime: "4 دقائق",
-    image: "/images/hero-banner.jpg",
+    image: "https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=800&q=80",
   },
   {
     slug: "تمويل-شخصي-مليون-ريال-الرياض",
@@ -81,7 +81,7 @@ export const articles = [
     category: "التمويل الشخصي",
     date: "2 سبتمبر 2026",
     readTime: "4 دقائق",
-    image: "/images/personal-finance.jpg",
+    image: "https://images.unsplash.com/photo-1579621970563-ebec7560ff3e?w=800&q=80",
   },
   {
     slug: "تمويل-شخصي-سريع-الرياض",
@@ -90,7 +90,7 @@ export const articles = [
     category: "التمويل الشخصي",
     date: "2 سبتمبر 2026",
     readTime: "3 دقائق",
-    image: "/images/hero-banner.jpg",
+    image: "https://images.unsplash.com/photo-1559526324-4b87b5e36e44?w=800&q=80",
   },
   {
     slug: "قرض-شخصي-الرياض-مقارنة-شركات",
@@ -99,7 +99,7 @@ export const articles = [
     category: "التمويل الشخصي",
     date: "2 سبتمبر 2026",
     readTime: "6 دقائق",
-    image: "/images/personal-finance.jpg",
+    image: "https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=800&q=80",
   },
   {
     slug: "تمويل-شخصي-للموظفين-الرياض",
@@ -108,7 +108,7 @@ export const articles = [
     category: "التمويل الشخصي",
     date: "2 سبتمبر 2026",
     readTime: "4 دقائق",
-    image: "/images/hero-banner.jpg",
+    image: "https://images.unsplash.com/photo-1521791136064-7986c2920216?w=800&q=80",
   },
   {
     slug: "تمويل-شخصي-متقاعدين-الرياض",
@@ -117,7 +117,7 @@ export const articles = [
     category: "التمويل الشخصي",
     date: "2 سبتمبر 2026",
     readTime: "4 دقائق",
-    image: "/images/personal-finance.jpg",
+    image: "https://images.unsplash.com/photo-1553729459-efe14ef6055d?w=800&q=80",
   },
   {
     slug: "تمويل-شخصي-للعسكريين-الرياض",
@@ -126,7 +126,7 @@ export const articles = [
     category: "التمويل الشخصي",
     date: "2 سبتمبر 2026",
     readTime: "4 دقائق",
-    image: "/images/hero-banner.jpg",
+    image: "https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=800&q=80",
   },
   {
     slug: "تمويل-شخصي-للسيدات-الرياض",
@@ -135,7 +135,7 @@ export const articles = [
     category: "التمويل الشخصي",
     date: "2 سبتمبر 2026",
     readTime: "3 دقائق",
-    image: "/images/personal-finance.jpg",
+    image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=800&q=80",
   },
   {
     slug: "تمويل-شخصي-بأقل-نسبة-فائدة-الرياض",
@@ -144,7 +144,7 @@ export const articles = [
     category: "التمويل الشخصي",
     date: "2 سبتمبر 2026",
     readTime: "5 دقائق",
-    image: "/images/hero-banner.jpg",
+    image: "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=800&q=80",
   },
   {
     slug: "تمويل-شخصي-بدون-تحويل-راتب-الرياض",
@@ -153,7 +153,7 @@ export const articles = [
     category: "التمويل الشخصي",
     date: "2 سبتمبر 2026",
     readTime: "4 دقائق",
-    image: "/images/personal-finance.jpg",
+    image: "https://images.unsplash.com/photo-1565372195458-9de0b320ef04?w=800&q=80",
   },
   {
     slug: "تمويل-شخصي-إسلامي-الرياض",
@@ -162,7 +162,7 @@ export const articles = [
     category: "التمويل الشخصي",
     date: "2 سبتمبر 2026",
     readTime: "5 دقائق",
-    image: "/images/hero-banner.jpg",
+    image: "https://images.unsplash.com/photo-1466692476868-aef1dfb1e735?w=800&q=80",
   },
   {
     slug: "تمويل-شخصي-للقطاع-الخاص-الرياض",
@@ -171,7 +171,7 @@ export const articles = [
     category: "التمويل الشخصي",
     date: "2 سبتمبر 2026",
     readTime: "4 دقائق",
-    image: "/images/personal-finance.jpg",
+    image: "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=800&q=80",
   },
   {
     slug: "تمويل-شخصي-للموظفين-الحكوميين-الرياض",
@@ -180,7 +180,7 @@ export const articles = [
     category: "التمويل الشخصي",
     date: "2 سبتمبر 2026",
     readTime: "4 دقائق",
-    image: "/images/hero-banner.jpg",
+    image: "https://images.unsplash.com/photo-1568992687947-868a62a9f521?w=800&q=80",
   },
   {
     slug: "تمويل-شخصي-500-ألف-ريال-الرياض",
@@ -189,7 +189,7 @@ export const articles = [
     category: "التمويل الشخصي",
     date: "2 سبتمبر 2026",
     readTime: "4 دقائق",
-    image: "/images/personal-finance.jpg",
+    image: "https://images.unsplash.com/photo-1633158829585-23ba8f7c8caf?w=800&q=80",
   },
   {
     slug: "تمويل-شخصي-لأصحاب-المهن-الحرة-الرياض",
@@ -198,7 +198,7 @@ export const articles = [
     category: "التمويل الشخصي",
     date: "2 سبتمبر 2026",
     readTime: "4 دقائق",
-    image: "/images/hero-banner.jpg",
+    image: "https://images.unsplash.com/photo-1664575602554-2087b04935a5?w=800&q=80",
   },
   {
     slug: "تمويل-شخصي-للأطباء-الرياض",
@@ -207,7 +207,7 @@ export const articles = [
     category: "التمويل الشخصي",
     date: "2 سبتمبر 2026",
     readTime: "4 دقائق",
-    image: "/images/personal-finance.jpg",
+    image: "https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=800&q=80",
   },
   {
     slug: "تمويل-شخصي-للمهندسين-الرياض",
@@ -216,7 +216,7 @@ export const articles = [
     category: "التمويل الشخصي",
     date: "2 سبتمبر 2026",
     readTime: "3 دقائق",
-    image: "/images/hero-banner.jpg",
+    image: "https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=800&q=80",
   },
   {
     slug: "تمويل-شخصي-للمعلمين-الرياض",
@@ -225,7 +225,7 @@ export const articles = [
     category: "التمويل الشخصي",
     date: "2 سبتمبر 2026",
     readTime: "3 دقائق",
-    image: "/images/personal-finance.jpg",
+    image: "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=800&q=80",
   },
   {
     slug: "تمويل-شخصي-للمقيمين-الرياض",
@@ -234,7 +234,7 @@ export const articles = [
     category: "التمويل الشخصي",
     date: "2 سبتمبر 2026",
     readTime: "4 دقائق",
-    image: "/images/hero-banner.jpg",
+    image: "https://images.unsplash.com/photo-1543269865-cbf427effbad?w=800&q=80",
   },
   {
     slug: "تمويل-شخصي-بشروط-ميسرة-الرياض",
@@ -243,7 +243,7 @@ export const articles = [
     category: "التمويل الشخصي",
     date: "2 سبتمبر 2026",
     readTime: "3 دقائق",
-    image: "/images/personal-finance.jpg",
+    image: "https://images.unsplash.com/photo-1591696205602-2f950c417cb9?w=800&q=80",
   },
   {
     slug: "تمويل-شخصي-بدون-ضامن-الرياض",
@@ -252,7 +252,7 @@ export const articles = [
     category: "التمويل الشخصي",
     date: "2 سبتمبر 2026",
     readTime: "4 دقائق",
-    image: "/images/hero-banner.jpg",
+    image: "https://images.unsplash.com/photo-1434030216411-0b793f4b4173?w=800&q=80",
   },
   {
     slug: "تمويل-شخصي-لأصحاب-الأعمال-الرياض",
@@ -261,7 +261,7 @@ export const articles = [
     category: "التمويل الشخصي",
     date: "2 سبتمبر 2026",
     readTime: "5 دقائق",
-    image: "/images/personal-finance.jpg",
+    image: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=800&q=80",
   },
   {
     slug: "تمويل-شخصي-للمستثمرين-الرياض",
@@ -270,7 +270,7 @@ export const articles = [
     category: "التمويل الشخصي",
     date: "2 سبتمبر 2026",
     readTime: "4 دقائق",
-    image: "/images/hero-banner.jpg",
+    image: "https://images.unsplash.com/photo-1642543492481-44e81e3914a7?w=800&q=80",
   },
   {
     slug: "تمويل-شخصي-لأصحاب-الدخل-المحدود-الرياض",
@@ -279,7 +279,7 @@ export const articles = [
     category: "التمويل الشخصي",
     date: "2 سبتمبر 2026",
     readTime: "4 دقائق",
-    image: "/images/personal-finance.jpg",
+    image: "https://images.unsplash.com/photo-1601597111158-2fceff292cdc?w=800&q=80",
   },
 
   // New Real Estate Articles
@@ -290,7 +290,7 @@ export const articles = [
     category: "التمويل العقاري",
     date: "2 سبتمبر 2026",
     readTime: "6 دقائق",
-    image: "/images/real-estate-riyadh-seo.jpg",
+    image: "https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=800&q=80",
   },
   {
     slug: "شروط-تمويل-عقاري-بدون-دفعة-اولى-الرياض",
@@ -299,7 +299,7 @@ export const articles = [
     category: "التمويل العقاري",
     date: "2 سبتمبر 2026",
     readTime: "5 دقائق",
-    image: "/images/real-estate-riyadh-seo.jpg",
+    image: "https://images.unsplash.com/photo-1582407947304-fd86f028f716?w=800&q=80",
   },
   {
     slug: "مقارنة-قرض-عقاري-الرياض",
@@ -308,6 +308,6 @@ export const articles = [
     category: "التمويل العقاري",
     date: "2 سبتمبر 2026",
     readTime: "7 دقائق",
-    image: "/images/real-estate.jpg",
+    image: "https://images.unsplash.com/photo-1516156008625-3a9d6067fab5?w=800&q=80",
   }
 ];
