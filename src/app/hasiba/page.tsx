@@ -307,20 +307,19 @@ export default function CalculatorPage() {
       {/* ── Tips Section ── */}
       <div className="max-w-5xl mx-auto px-4 sm:px-6 mt-16">
         <h2 className="text-2xl font-black text-slate-900 mb-8 text-center relative inline-block left-1/2 -translate-x-1/2">
-          💡 مميزات القرض الحسن من نجد السداد
+          مميزات القرض الحسن من نجد السداد
           <div className="h-1 w-1/2 bg-saddad-gold mx-auto mt-2 rounded-full"></div>
         </h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
           {[
-            { icon: "🛡️", title: "موافق للشريعة 100%", body: "تمويل خالي تماماً من الربا أو الفوائد المتراكمة. ما تقترضه هو ما تسدده بالهللة." },
-            { icon: "🏢", title: "لجميع القطاعات", body: "متاح للموظفين الحكوميين وموظفي القطاع الخاص وفق ضوابط وشروط ميسرة." },
-            { icon: "⏳", title: "فترة سداد مرنة", body: "تصل فترات السداد إلى 60 شهراً (5 سنوات) للتمويل الشخصي لتقليل العبء الشهري عليك." },
-            { icon: "🔄", title: "إسقاط المديونية", body: "في حالة الوفاة أو العجز الكلي (لا سمح الله) تسقط المديونية المتبقية فوراً." },
-            { icon: "🎯", title: "بدون كفيل غارم", body: "في معظم الحالات نكتفي بضمان الراتب دون الحاجة لإشغال أصدقائك أو أقاربك بطلب الكفالة." },
-            { icon: "⏱️", title: "سرعة الإنجاز", body: "بفضل أنظمتنا المباشرة، تحصل على الموافقة والتمويل في وقت قياسي بمجرد اكتمال الشروط." },
+            { title: "موافق للشريعة 100%", body: "تمويل خالي تماماً من الربا أو الفوائد المتراكمة. ما تقترضه هو ما تسدده بالهللة." },
+            { title: "لجميع القطاعات", body: "متاح للموظفين الحكوميين وموظفي القطاع الخاص وفق ضوابط وشروط ميسرة." },
+            { title: "فترة سداد مرنة", body: "تصل فترات السداد إلى 60 شهراً (5 سنوات) للتمويل الشخصي لتقليل العبء الشهري عليك." },
+            { title: "إسقاط المديونية", body: "في حالة الوفاة أو العجز الكلي (لا سمح الله) تسقط المديونية المتبقية فوراً." },
+            { title: "بدون كفيل غارم", body: "في معظم الحالات نكتفي بضمان الراتب دون الحاجة لإشغال أصدقائك أو أقاربك بطلب الكفالة." },
+            { title: "سرعة الإنجاز", body: "بفضل أنظمتنا المباشرة، تحصل على الموافقة والتمويل في وقت قياسي بمجرد اكتمال الشروط." },
           ].map(tip => (
             <div key={tip.title} className="bg-white border border-slate-200 rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow">
-              <div className="text-3xl mb-4 bg-slate-50 w-14 h-14 flex items-center justify-center rounded-full border border-slate-100">{tip.icon}</div>
               <h3 className="text-slate-900 font-bold mb-2 text-base">{tip.title}</h3>
               <p className="text-slate-600 text-sm leading-relaxed">{tip.body}</p>
             </div>
