@@ -24,7 +24,7 @@ export default function Navbar() {
     { name: "الرئيسية", path: "/" },
     { name: "من نحن", path: "/about" },
     { name: "خدماتنا", path: "/services" },
-    { name: "🧮 حاسبة التمويل", path: "/hasiba" },
+    { name: "حاسبة التمويل", path: "/hasiba" },
     { name: "المقالات", path: "/blog" },
     { name: "اتصل بنا", path: "/contact" },
   ];
