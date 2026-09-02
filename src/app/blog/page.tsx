@@ -11,7 +11,7 @@ export const metadata: Metadata = {
 
 export const articles = [
   {
-    slug: "real-estate-financing-no-down-payment-riyadh",
+    slug: "تمويل-عقاري-بدون-دفعة-اولى-الرياض",
     title: "شروط الحصول على تمويل عقاري بدون دفعة أولى في الرياض 2026",
     summary: "تعرف على كل التفاصيل والخطوات المطلوبة لامتلاك فيلا أو شقة سكنية في الرياض بدون الحاجة لدفعة أولى مسبقة وبأقساط ميسرة.",
     category: "تمويل عقاري",
@@ -20,7 +20,7 @@ export const articles = [
     image: "/images/real-estate.jpg",
   },
   {
-    slug: "how-to-clear-simah-defaults-and-settle-loans",
+    slug: "سداد-تعثرات-سمة-وتسوية-القروض",
     title: "دليلك الشامل لسداد التعثرات البنكية وتحسين السجل الائتماني في سمة",
     summary: "خطوات عملية وقانونية لمعالجة القروض المتعثرة وإعادة جدولتها والحصول على إخلاء طرف رسمي لاستعادة أهليتك البنكية.",
     category: "سداد تعثرات",
@@ -29,7 +29,7 @@ export const articles = [
     image: "/images/personal-finance.jpg",
   },
   {
-    slug: "corporate-debt-collection-solutions-saudi-arabia",
+    slug: "حلول-تحصيل-ديون-الشركات-السعودية",
     title: "طرق تحصيل ديون الشركات والمؤسسات وحماية التدفقات النقدية",
     summary: "كيف تضمن استرداد مستحقات شركتك المالية بأساليب نظامية وقانونية معتمدة تحفظ سمعتك التجارية وتسرع دوران رأس المال.",
     category: "تحصيل ديون",
@@ -38,7 +38,7 @@ export const articles = [
     image: "/images/business-debt.jpg",
   },
   {
-    slug: "personal-financing-options-up-to-one-million-sar",
+    slug: "افضل-خيارات-التمويل-الشخصي-الرياض",
     title: "أفضل برامج التمويل الشخصي للموظفين حتى مليون ريال في الرياض",
     summary: "مقارنة شاملة بين برامج التمويل الشخصي والسيولة الفورية للقطاع الحكومي والخاص مع أفضل هوامش ربح وفترات سداد ميسرة.",
     category: "تمويل شخصي",
@@ -47,7 +47,7 @@ export const articles = [
     image: "/images/hero-banner.jpg",
   },
   {
-    slug: "najd-sadad-best-financial-solutions-company",
+    slug: "نجد-السداد-افضل-شركة-حلول-مالية",
     title: "شركة نجد السداد: خيارك الأول للحلول المالية وسداد التعثرات بالرياض",
     summary: "تعرف على خدمات شركة نجد السداد الرائدة في تقديم الاستشارات، تحصيل الديون، والتمويل المبتكر لكل من الأفراد والشركات بأعلى معايير الاحترافية.",
     category: "خدمات الشركة",
@@ -56,7 +56,7 @@ export const articles = [
     image: "/images/hero-banner.jpg",
   },
   {
-    slug: "comprehensive-guide-debt-collection-riyadh",
+    slug: "الدليل-الشامل-لتحصيل-الديون-الرياض",
     title: "الدليل الشامل لتحصيل الديون وحل المنازعات المالية في السعودية",
     summary: "كيف تتجنب الديون المعدومة وتحافظ على حقوق شركتك؟ اكتشف استراتيجيات شركة نجد السداد المبتكرة لتحصيل الديون الودية والقانونية.",
     category: "تحصيل ديون",
