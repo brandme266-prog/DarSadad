@@ -34,7 +34,7 @@ export const articles = [
     category: "تمويل شخصي",
     date: "15 أغسطس 2026",
     readTime: "4 دقائق",
-    image: "/images/hero-banner.jpg",
+    image: "/images/personal-finance.jpg",
   },
   {
     slug: "نجد-السداد-افضل-شركة-حلول-مالية",
@@ -43,7 +43,7 @@ export const articles = [
     category: "خدمات الشركة",
     date: "5 سبتمبر 2026",
     readTime: "5 دقائق",
-    image: "/images/hero-banner.jpg",
+    image: "/images/business-debt.jpg",
   },
   {
     slug: "الدليل-الشامل-لتحصيل-الديون-الرياض",
@@ -63,7 +63,7 @@ export const articles = [
     category: "التمويل الشخصي",
     date: "2 سبتمبر 2026",
     readTime: "5 دقائق",
-    image: "/images/hero-banner.jpg",
+    image: "/images/personal-finance.jpg",
   },
   {
     slug: "تمويل-شخصي-بدون-كفيل-الرياض",
@@ -81,7 +81,7 @@ export const articles = [
     category: "التمويل الشخصي",
     date: "2 سبتمبر 2026",
     readTime: "4 دقائق",
-    image: "/images/hero-banner.jpg",
+    image: "/images/personal-finance.jpg",
   },
   {
     slug: "تمويل-شخصي-سريع-الرياض",
@@ -99,7 +99,7 @@ export const articles = [
     category: "التمويل الشخصي",
     date: "2 سبتمبر 2026",
     readTime: "6 دقائق",
-    image: "/images/hero-banner.jpg",
+    image: "/images/personal-finance.jpg",
   },
   {
     slug: "تمويل-شخصي-للموظفين-الرياض",
@@ -117,7 +117,7 @@ export const articles = [
     category: "التمويل الشخصي",
     date: "2 سبتمبر 2026",
     readTime: "4 دقائق",
-    image: "/images/hero-banner.jpg",
+    image: "/images/personal-finance.jpg",
   },
   {
     slug: "تمويل-شخصي-للعسكريين-الرياض",
@@ -135,7 +135,7 @@ export const articles = [
     category: "التمويل الشخصي",
     date: "2 سبتمبر 2026",
     readTime: "3 دقائق",
-    image: "/images/hero-banner.jpg",
+    image: "/images/personal-finance.jpg",
   },
   {
     slug: "تمويل-شخصي-بأقل-نسبة-فائدة-الرياض",
@@ -153,7 +153,7 @@ export const articles = [
     category: "التمويل الشخصي",
     date: "2 سبتمبر 2026",
     readTime: "4 دقائق",
-    image: "/images/hero-banner.jpg",
+    image: "/images/personal-finance.jpg",
   },
   {
     slug: "تمويل-شخصي-إسلامي-الرياض",
@@ -171,7 +171,7 @@ export const articles = [
     category: "التمويل الشخصي",
     date: "2 سبتمبر 2026",
     readTime: "4 دقائق",
-    image: "/images/hero-banner.jpg",
+    image: "/images/personal-finance.jpg",
   },
   {
     slug: "تمويل-شخصي-للموظفين-الحكوميين-الرياض",
@@ -189,7 +189,7 @@ export const articles = [
     category: "التمويل الشخصي",
     date: "2 سبتمبر 2026",
     readTime: "4 دقائق",
-    image: "/images/hero-banner.jpg",
+    image: "/images/personal-finance.jpg",
   },
   {
     slug: "تمويل-شخصي-لأصحاب-المهن-الحرة-الرياض",
@@ -207,7 +207,7 @@ export const articles = [
     category: "التمويل الشخصي",
     date: "2 سبتمبر 2026",
     readTime: "4 دقائق",
-    image: "/images/hero-banner.jpg",
+    image: "/images/personal-finance.jpg",
   },
   {
     slug: "تمويل-شخصي-للمهندسين-الرياض",
@@ -225,7 +225,7 @@ export const articles = [
     category: "التمويل الشخصي",
     date: "2 سبتمبر 2026",
     readTime: "3 دقائق",
-    image: "/images/hero-banner.jpg",
+    image: "/images/personal-finance.jpg",
   },
   {
     slug: "تمويل-شخصي-للمقيمين-الرياض",
@@ -243,7 +243,7 @@ export const articles = [
     category: "التمويل الشخصي",
     date: "2 سبتمبر 2026",
     readTime: "3 دقائق",
-    image: "/images/hero-banner.jpg",
+    image: "/images/personal-finance.jpg",
   },
   {
     slug: "تمويل-شخصي-بدون-ضامن-الرياض",
@@ -261,7 +261,7 @@ export const articles = [
     category: "التمويل الشخصي",
     date: "2 سبتمبر 2026",
     readTime: "5 دقائق",
-    image: "/images/hero-banner.jpg",
+    image: "/images/personal-finance.jpg",
   },
   {
     slug: "تمويل-شخصي-للمستثمرين-الرياض",
@@ -279,7 +279,7 @@ export const articles = [
     category: "التمويل الشخصي",
     date: "2 سبتمبر 2026",
     readTime: "4 دقائق",
-    image: "/images/hero-banner.jpg",
+    image: "/images/personal-finance.jpg",
   },
 
   // New Real Estate Articles
@@ -308,6 +308,6 @@ export const articles = [
     category: "التمويل العقاري",
     date: "2 سبتمبر 2026",
     readTime: "7 دقائق",
-    image: "/images/real-estate-riyadh-seo.jpg",
+    image: "/images/real-estate.jpg",
   }
 ];
