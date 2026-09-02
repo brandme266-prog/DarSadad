@@ -3,7 +3,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { notFound } from "next/navigation";
 import { Calendar, Clock, ArrowRight, PhoneCall, CheckCircle2, XCircle, AlertTriangle } from "lucide-react";
-import { articles } from "../page";
+import { articles } from "@/data/articlesList";
 
 interface Props {
   params: Promise<{ slug: string }>;
@@ -28,6 +28,9 @@ export function generateStaticParams() {
 
 // ===================== محتوى المقالات الكامل =====================
 import { articleContents } from "@/data/articlesContent";
+
+const renderWithLinks = (text: string) => text;
+
 function ContentSection({ section }: { section: typeof articleContents[string]["sections"][0] }) {
   return (
     <div className="space-y-4">
@@ -117,8 +120,6 @@ export default async function ArticleDetailPage({ params }: Props) {
         <div className="flex items-center gap-3 text-xs text-slate-400 mb-4 flex-wrap">
           <span className="bg-saddad-gold text-slate-950 font-bold px-3 py-1 rounded-full">{article!.category}</span>
           <span className="flex items-center gap-1"><Calendar size={13} /> {article!.date}</span>
-          <span>•</span>
-          <span className="flex items-center gap-1"><Clock size={13} /> وقت القراءة: {article!.readTime}</span>
         </div>
         <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-slate-900 leading-tight mb-6">{article!.title}</h1>
         <p className="text-lg text-slate-500 font-light leading-relaxed border-r-4 border-saddad-gold pr-4">{article!.summary}</p>

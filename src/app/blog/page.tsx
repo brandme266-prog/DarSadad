@@ -50,7 +50,6 @@ export default function BlogPage() {
               <div>
                 <div className="flex items-center gap-4 text-slate-400 text-xs mb-4">
                   <span className="flex items-center gap-1"><Calendar size={14} className="text-saddad-gold" /> {articles[0].date}</span>
-                  <span className="flex items-center gap-1"><Clock size={14} className="text-saddad-gold" /> {articles[0].readTime}</span>
                 </div>
                 <h2 className="text-2xl lg:text-3xl font-bold mb-4 leading-tight">
                   <Link href={`/blog/${articles[0].slug}`} className="hover:text-saddad-gold transition-colors">
@@ -97,8 +96,6 @@ export default function BlogPage() {
                 <div>
                   <div className="flex items-center gap-3 text-slate-400 text-xs mb-3 font-light">
                     <span className="flex items-center gap-1"><Calendar size={12} /> {article.date}</span>
-                    <span>•</span>
-                    <span className="flex items-center gap-1"><Clock size={12} /> {article.readTime}</span>
                   </div>
 
                   <h3 className="text-lg font-bold text-slate-900 mb-3 group-hover:text-saddad-gold transition-colors leading-snug">
