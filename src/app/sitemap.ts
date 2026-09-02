@@ -1,5 +1,5 @@
 import { MetadataRoute } from 'next';
-import { articles } from './blog/page';
+import { articles } from '@/data/articlesList';
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = 'https://brand1me.com';
