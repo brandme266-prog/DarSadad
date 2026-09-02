@@ -4,6 +4,7 @@ import Image from "next/image";
 import { notFound } from "next/navigation";
 import { Calendar, Clock, ArrowRight, PhoneCall, CheckCircle2, XCircle, AlertTriangle } from "lucide-react";
 import { articles } from "@/data/articlesList";
+import { articleContents } from "@/data/articlesContent";
 
 interface Props {
   params: Promise<{ slug: string }>;
@@ -25,9 +26,6 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 export function generateStaticParams() {
   return articles.map(a => ({ slug: a.slug }));
 }
-
-// ===================== محتوى المقالات الكامل =====================
-import { articleContents } from "@/data/articlesContent";
 
 const renderWithLinks = (text: string) => text;
 
