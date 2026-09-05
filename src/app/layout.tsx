@@ -1,4 +1,4 @@
-﻿import type { Metadata } from "next";
+import type { Metadata } from "next";
 import { Almarai } from "next/font/google";
 import "./globals.css";
 import Navbar from "./components/Navbar";
@@ -168,6 +168,27 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
           {children}
         </main>
         <Footer />
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              function getParam(p) {
+                var match = RegExp('[?&]' + p + '=([^&]*)').exec(window.location.search);
+                return match && decodeURIComponent(match[1].replace(/\\+/g, ' '));
+              }
+              function addGclid() {
+                var gclidParam = getParam('gclid');
+                if (gclidParam) {
+                  localStorage.setItem('gclid', gclidParam);
+                }
+                var gclid = localStorage.getItem('gclid');
+                if (document.getElementById('gclid_field') && gclid) {
+                  document.getElementById('gclid_field').value = gclid;
+                }
+              }
+              window.addEventListener('load', addGclid);
+            `
+          }}
+        />
       </body>
     </html>
   );
