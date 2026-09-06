@@ -203,9 +203,8 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
                 var target = e.target.closest('a');
                 if (target && target.href && (target.href.includes('wa.me') || target.href.includes('whatsapp.com'))) {
                   if (typeof gtag === 'function') {
-                    gtag('event', 'whatsapp_click', {
-                      'event_category': 'Contact',
-                      'event_label': 'WhatsApp Button'
+                    gtag('event', 'conversion', {
+                      'send_to': 'AW-18025957308/oleFCNOH4e8cELyPuZND'
                     });
                   }
                 }
