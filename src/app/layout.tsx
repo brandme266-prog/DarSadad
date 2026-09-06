@@ -73,7 +73,7 @@ const organizationSchema = {
   telephone: "0570856657",
   address: {
     "@type": "PostalAddress",
-    streetAddress: "الرياض، حي المهدية، السيل الكبير",
+    streetAddress: "الرياض، حي المهدية",
     addressLocality: "الرياض",
     addressRegion: "الرياض",
     postalCode: "14931",
@@ -161,6 +161,17 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
+        <script async src="https://www.googletagmanager.com/gtag/js?id=AW-18025957308"></script>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'AW-18025957308');
+            `
+          }}
+        />
       </head>
       <body className="min-h-full flex flex-col bg-white text-slate-700 font-light selection:bg-saddad-gold/20 selection:text-saddad-blue">
         <Navbar />
@@ -186,6 +197,19 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
                 }
               }
               window.addEventListener('load', addGclid);
+
+              // Track WhatsApp Clicks globally
+              document.addEventListener('click', function(e) {
+                var target = e.target.closest('a');
+                if (target && target.href && (target.href.includes('wa.me') || target.href.includes('whatsapp.com'))) {
+                  if (typeof gtag === 'function') {
+                    gtag('event', 'whatsapp_click', {
+                      'event_category': 'Contact',
+                      'event_label': 'WhatsApp Button'
+                    });
+                  }
+                }
+              });
             `
           }}
         />
